@@ -1,0 +1,1348 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>ClickHouse | ZYHCODE的博客</title>
+    <meta name="generator" content="VuePress 1.9.2">
+    <link rel="icon" href="/img/favicon.ico">
+    <meta name="description" content="Java 全栈知识体系">
+    <meta name="keywords" content=".net,doc,easy,tool">
+    <meta name="theme-color" content="#11a8cd">
+    
+    <link rel="preload" href="/assets/css/0.styles.a86363b8.css" as="style"><link rel="preload" href="/assets/js/app.5c33f930.js" as="script"><link rel="preload" href="/assets/js/3.90e7f4f9.js" as="script"><link rel="preload" href="/assets/js/48.b7baffbf.js" as="script"><link rel="prefetch" href="/assets/js/10.c798c6b8.js"><link rel="prefetch" href="/assets/js/11.ee2e4742.js"><link rel="prefetch" href="/assets/js/12.02c1d8aa.js"><link rel="prefetch" href="/assets/js/13.3deb099f.js"><link rel="prefetch" href="/assets/js/14.8b0e3cca.js"><link rel="prefetch" href="/assets/js/15.729baa93.js"><link rel="prefetch" href="/assets/js/16.ea2228b8.js"><link rel="prefetch" href="/assets/js/17.54f8d56b.js"><link rel="prefetch" href="/assets/js/18.8295b59a.js"><link rel="prefetch" href="/assets/js/19.80ec033a.js"><link rel="prefetch" href="/assets/js/2.294e43d0.js"><link rel="prefetch" href="/assets/js/20.3a3150a6.js"><link rel="prefetch" href="/assets/js/21.2cfb08e7.js"><link rel="prefetch" href="/assets/js/22.961ef9c6.js"><link rel="prefetch" href="/assets/js/23.af39583b.js"><link rel="prefetch" href="/assets/js/24.b2c08c82.js"><link rel="prefetch" href="/assets/js/25.794e8dcc.js"><link rel="prefetch" href="/assets/js/26.cefdf367.js"><link rel="prefetch" href="/assets/js/27.8e7d7bcb.js"><link rel="prefetch" href="/assets/js/28.df6604a9.js"><link rel="prefetch" href="/assets/js/29.8fc4ee82.js"><link rel="prefetch" href="/assets/js/30.6c71ff99.js"><link rel="prefetch" href="/assets/js/31.75827cd2.js"><link rel="prefetch" href="/assets/js/32.305df95d.js"><link rel="prefetch" href="/assets/js/33.d5abdfb7.js"><link rel="prefetch" href="/assets/js/34.45ebe537.js"><link rel="prefetch" href="/assets/js/35.d96f3878.js"><link rel="prefetch" href="/assets/js/36.20c54cb5.js"><link rel="prefetch" href="/assets/js/37.70b89b2b.js"><link rel="prefetch" href="/assets/js/38.b76f1251.js"><link rel="prefetch" href="/assets/js/39.deafc6a5.js"><link rel="prefetch" href="/assets/js/4.35d0c84a.js"><link rel="prefetch" href="/assets/js/40.9169e8bf.js"><link rel="prefetch" href="/assets/js/41.6bd6819e.js"><link rel="prefetch" href="/assets/js/42.1324b559.js"><link rel="prefetch" href="/assets/js/43.37faf093.js"><link rel="prefetch" href="/assets/js/44.116021b1.js"><link rel="prefetch" href="/assets/js/45.54353d71.js"><link rel="prefetch" href="/assets/js/46.9cd75d5d.js"><link rel="prefetch" href="/assets/js/47.9f26124c.js"><link rel="prefetch" href="/assets/js/49.21953821.js"><link rel="prefetch" href="/assets/js/5.197e9545.js"><link rel="prefetch" href="/assets/js/50.6ccefcc2.js"><link rel="prefetch" href="/assets/js/51.5a40c934.js"><link rel="prefetch" href="/assets/js/52.029bc53b.js"><link rel="prefetch" href="/assets/js/53.665cf685.js"><link rel="prefetch" href="/assets/js/54.6a915811.js"><link rel="prefetch" href="/assets/js/55.0308b2f7.js"><link rel="prefetch" href="/assets/js/56.99755c06.js"><link rel="prefetch" href="/assets/js/57.732bd2f2.js"><link rel="prefetch" href="/assets/js/58.630b7f9c.js"><link rel="prefetch" href="/assets/js/59.7fce3d78.js"><link rel="prefetch" href="/assets/js/6.e1ca599c.js"><link rel="prefetch" href="/assets/js/60.e1e67346.js"><link rel="prefetch" href="/assets/js/61.2e2b79f5.js"><link rel="prefetch" href="/assets/js/62.495c41cf.js"><link rel="prefetch" href="/assets/js/63.2bc8f152.js"><link rel="prefetch" href="/assets/js/64.8ec76d2e.js"><link rel="prefetch" href="/assets/js/65.3252427b.js"><link rel="prefetch" href="/assets/js/66.d051d693.js"><link rel="prefetch" href="/assets/js/67.d639c4e2.js"><link rel="prefetch" href="/assets/js/68.a3f26102.js"><link rel="prefetch" href="/assets/js/69.eafaacec.js"><link rel="prefetch" href="/assets/js/7.ce73f7d6.js"><link rel="prefetch" href="/assets/js/70.9985d66c.js"><link rel="prefetch" href="/assets/js/71.bff353d0.js"><link rel="prefetch" href="/assets/js/72.d34bb386.js"><link rel="prefetch" href="/assets/js/73.878497a0.js"><link rel="prefetch" href="/assets/js/74.cde9ead1.js"><link rel="prefetch" href="/assets/js/75.7b0e2ca8.js"><link rel="prefetch" href="/assets/js/76.fda754f1.js"><link rel="prefetch" href="/assets/js/77.265ae7f7.js"><link rel="prefetch" href="/assets/js/78.67911f34.js"><link rel="prefetch" href="/assets/js/79.cefcd8ef.js"><link rel="prefetch" href="/assets/js/8.fc4ed1f0.js"><link rel="prefetch" href="/assets/js/80.670edf24.js"><link rel="prefetch" href="/assets/js/9.1c569fee.js">
+    <link rel="stylesheet" href="/assets/css/0.styles.a86363b8.css">
+  </head>
+  <body class="theme-mode-light">
+    <div id="app" data-server-rendered="true"><div class="theme-container sidebar-open have-rightmenu"><header class="navbar blur"><div title="目录" class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/" class="home-link router-link-active"><img src="/img/logo.png" alt="ZYHCODE的博客" class="logo"> <span class="site-name can-hide">ZYHCODE的博客</span></a> <div class="links"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><a href="/" class="nav-link">🏠首页</a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="Java基础" class="dropdown-title"><a href="/pages/77d4e2/" class="link-title">Java基础</a> <span class="title" style="display:none;">Java基础</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><h4>集合</h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/pages/77d4e2/" class="nav-link">IO基础知识</a></li><li class="dropdown-subitem"><a href="/pages/49acab/" class="nav-link">IO设计模式</a></li><li class="dropdown-subitem"><a href="/pages/a3d832/" class="nav-link">IO模型总结</a></li><li class="dropdown-subitem"><a href="/pages/42be26/" class="nav-link">NIO核心知识总结</a></li></ul></li><li class="dropdown-item"><h4>IO流总结</h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/pages/77d4e2/" class="nav-link">IO基础知识</a></li><li class="dropdown-subitem"><a href="/pages/49acab/" class="nav-link">IO设计模式</a></li><li class="dropdown-subitem"><a href="/pages/a3d832/" class="nav-link">IO模型总结</a></li><li class="dropdown-subitem"><a href="/pages/42be26/" class="nav-link">NIO核心知识总结</a></li></ul></li><li class="dropdown-item"><h4>并发编程</h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/pages/77d4e2/" class="nav-link">IO基础知识</a></li><li class="dropdown-subitem"><a href="/pages/49acab/" class="nav-link">IO设计模式</a></li><li class="dropdown-subitem"><a href="/pages/a3d832/" class="nav-link">IO模型总结</a></li><li class="dropdown-subitem"><a href="/pages/42be26/" class="nav-link">NIO核心知识总结</a></li></ul></li><li class="dropdown-item"><h4>JVM</h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/pages/77d4e2/" class="nav-link">IO基础知识</a></li><li class="dropdown-subitem"><a href="/pages/49acab/" class="nav-link">IO设计模式</a></li><li class="dropdown-subitem"><a href="/pages/a3d832/" class="nav-link">IO模型总结</a></li><li class="dropdown-subitem"><a href="/pages/42be26/" class="nav-link">NIO核心知识总结</a></li></ul></li><li class="dropdown-item"><h4>版本新特性</h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/pages/cd056d/" class="nav-link">Java8新特性</a></li><li class="dropdown-subitem"><a href="/pages/b610cd/" class="nav-link">Java8指南中文翻译</a></li><li class="dropdown-subitem"><a href="/pages/1091ad/" class="nav-link">Java9新特性</a></li><li class="dropdown-subitem"><a href="/pages/e43406/" class="nav-link">Java10新特性</a></li><li class="dropdown-subitem"><a href="/pages/f37c60/" class="nav-link">Java11新特性</a></li><li class="dropdown-subitem"><a href="/pages/79a5f6/" class="nav-link">Java12-13新特性</a></li><li class="dropdown-subitem"><a href="/pages/683a03/" class="nav-link">Java14-15新特性</a></li><li class="dropdown-subitem"><a href="/pages/fa2c73/" class="nav-link">Java16新特性</a></li><li class="dropdown-subitem"><a href="/pages/245aa2/" class="nav-link">Java17新特性</a></li><li class="dropdown-subitem"><a href="/pages/ce76de/" class="nav-link">Java18新特性</a></li><li class="dropdown-subitem"><a href="/pages/42d550/" class="nav-link">Java19新特性</a></li><li class="dropdown-subitem"><a href="/pages/d5208b/" class="nav-link">Java20新特性</a></li><li class="dropdown-subitem"><a href="/pages/54087b/" class="nav-link">Java21新特性</a></li></ul></li><li class="dropdown-item"><h4>Springboot</h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/pages/be9ac8/" class="nav-link">IO基础知识</a></li><li class="dropdown-subitem"><a href="/pages/c6bced/" class="nav-link">Cookie、Session、JWT、Token</a></li></ul></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="微服务" class="dropdown-title"><a href="/pages/easytool/" class="link-title">微服务</a> <span class="title" style="display:none;">微服务</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/pages/easytool/" class="nav-link">设计初衷</a></li><li class="dropdown-item"><!----> <a href="/pages/dc4434/" class="nav-link">克隆</a></li><li class="dropdown-item"><!----> <a href="/pages/24d03b/" class="nav-link">类型转换</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="大数据" class="dropdown-title"><a href="/pages/easytool/" class="link-title">大数据</a> <span class="title" style="display:none;">大数据</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/pages/easytool/" class="nav-link">设计初衷</a></li><li class="dropdown-item"><!----> <a href="/pages/dc4434/" class="nav-link">克隆</a></li><li class="dropdown-item"><!----> <a href="/pages/24d03b/" class="nav-link">类型转换</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="🎖人工智能" class="dropdown-title"><a href="/pages/easytool/" class="link-title">🎖人工智能</a> <span class="title" style="display:none;">🎖人工智能</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><h4>机器学习</h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/pages/f1d3fb/" class="nav-link">吴恩达课程笔记</a></li></ul></li><li class="dropdown-item"><h4>深度学习</h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/pages/e50dff/" class="nav-link">简介</a></li><li class="dropdown-subitem"><a href="/pages/easytool/" class="nav-link">设计初衷</a></li></ul></li><li class="dropdown-item"><h4>大模型</h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/pages/e50dff/" class="nav-link">简介</a></li><li class="dropdown-subitem"><a href="/pages/easytool/" class="nav-link">设计初衷</a></li></ul></li><li class="dropdown-item"><h4>数字人</h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/pages/e50dff/" class="nav-link">简介</a></li><li class="dropdown-subitem"><a href="/pages/easytool/" class="nav-link">设计初衷</a></li></ul></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="中间件|部署" class="dropdown-title"><a href="/pages/e50dff/" class="link-title">中间件|部署</a> <span class="title" style="display:none;">中间件|部署</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><h4>Docker</h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/pages/e50dff/" class="nav-link">简介</a></li><li class="dropdown-subitem"><a href="/pages/f1d3fb/" class="nav-link">机器学习</a></li><li class="dropdown-subitem"><a href="/pages/fbe42b/" class="nav-link">Apisix</a></li><li class="dropdown-subitem"><a href="/pages/272684/" class="nav-link">Apollo</a></li><li class="dropdown-subitem"><a href="/pages/01958e/" class="nav-link">Cassandra</a></li><li class="dropdown-subitem"><a href="/pages/7e58c5/" class="nav-link">Cerebro</a></li><li class="dropdown-subitem"><a href="/pages/3b4977/" aria-current="page" class="nav-link router-link-exact-active router-link-active">ClickHouse</a></li><li class="dropdown-subitem"><a href="/pages/3d230b/" class="nav-link">Consul</a></li><li class="dropdown-subitem"><a href="/pages/ca4b88/" class="nav-link">EasyMock</a></li><li class="dropdown-subitem"><a href="/pages/18fff0/" class="nav-link">Elasticsearch</a></li><li class="dropdown-subitem"><a href="/pages/d93c0b/" class="nav-link">Emqx</a></li><li class="dropdown-subitem"><a href="/pages/7bfded/" class="nav-link">FastDFS</a></li><li class="dropdown-subitem"><a href="/pages/53b154/" class="nav-link">Flink</a></li><li class="dropdown-subitem"><a href="/pages/83a3e2/" class="nav-link">Gitlab</a></li><li class="dropdown-subitem"><a href="/pages/f90f99/" class="nav-link">Jenkins</a></li><li class="dropdown-subitem"><a href="/pages/8e9d93/" class="nav-link">Jrebel</a></li><li class="dropdown-subitem"><a href="/pages/ee069d/" class="nav-link">MariaDB</a></li><li class="dropdown-subitem"><a href="/pages/cff07b/" class="nav-link">MySQL</a></li><li class="dropdown-subitem"><a href="/pages/862a97/" class="nav-link">Percona</a></li><li class="dropdown-subitem"><a href="/pages/a560de/" class="nav-link">Phpmyadmin</a></li><li class="dropdown-subitem"><a href="/pages/230ca1/" class="nav-link">PostgreSQL</a></li><li class="dropdown-subitem"><a href="/pages/be7f5d/" class="nav-link">Redis</a></li></ul></li><li class="dropdown-item"><h4>Linux</h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/pages/518cfa/" class="nav-link">Linux命令查询</a></li><li class="dropdown-subitem"><a href="/pages/aa794b/" class="nav-link">查看Linux系统信息</a></li><li class="dropdown-subitem"><a href="/pages/2cbf35/" class="nav-link">CentOS7调整磁盘分区</a></li><li class="dropdown-subitem"><a href="/pages/42cda4/" class="nav-link">IO压测</a></li><li class="dropdown-subitem"><a href="/pages/71dd10/" class="nav-link">图形化监控工具Cockpit</a></li></ul></li><li class="dropdown-item"><h4>Redis</h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/pages/aa794b/" class="nav-link">查看Linux系统信息</a></li><li class="dropdown-subitem"><a href="/pages/2cbf35/" class="nav-link">CentOS7调整磁盘分区</a></li><li class="dropdown-subitem"><a href="/pages/42cda4/" class="nav-link">IO压测</a></li><li class="dropdown-subitem"><a href="/pages/71dd10/" class="nav-link">图形化监控工具Cockpit</a></li></ul></li><li class="dropdown-item"><h4>Kafka</h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/pages/aa794b/" class="nav-link">查看Linux系统信息</a></li><li class="dropdown-subitem"><a href="/pages/2cbf35/" class="nav-link">CentOS7调整磁盘分区</a></li><li class="dropdown-subitem"><a href="/pages/42cda4/" class="nav-link">IO压测</a></li><li class="dropdown-subitem"><a href="/pages/71dd10/" class="nav-link">图形化监控工具Cockpit</a></li></ul></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="面试宝典" class="dropdown-title"><a href="/pages/86a4e2/" class="link-title">面试宝典</a> <span class="title" style="display:none;">面试宝典</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/pages/86a4e2/" class="nav-link">AspNetCore面试题</a></li><li class="dropdown-item"><!----> <a href="/pages/a567cd/" class="nav-link">Elasticsearch面试题</a></li><li class="dropdown-item"><!----> <a href="/pages/5201b9/" class="nav-link">MongoDB面试题</a></li><li class="dropdown-item"><!----> <a href="/pages/43b4dd/" class="nav-link">MySql面试题</a></li><li class="dropdown-item"><!----> <a href="/pages/27153d/" class="nav-link">Nginx面试题</a></li><li class="dropdown-item"><!----> <a href="/pages/d74e41/" class="nav-link">RabbitMQ面试题</a></li><li class="dropdown-item"><!----> <a href="/pages/97e5f1/" class="nav-link">Redis面试题</a></li><li class="dropdown-item"><!----> <a href="/pages/51830e/" class="nav-link">设计模式</a></li><li class="dropdown-item"><!----> <a href="/pages/11e99f/" class="nav-link">微服务</a></li></ul></div></div><div class="nav-item"><a href="https://debug.group/string-diff.html" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  在线工具箱
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></div> <a href="https://github.com/Gresdy" target="_blank" rel="noopener noreferrer" class="repo-link">
+    GitHub
+    <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></nav></div></header> <div class="sidebar-mask"></div> <div class="sidebar-hover-trigger"></div> <aside class="sidebar" style="display:none;"><!----> <nav class="nav-links"><div class="nav-item"><a href="/" class="nav-link">🏠首页</a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="Java基础" class="dropdown-title"><a href="/pages/77d4e2/" class="link-title">Java基础</a> <span class="title" style="display:none;">Java基础</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><h4>集合</h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/pages/77d4e2/" class="nav-link">IO基础知识</a></li><li class="dropdown-subitem"><a href="/pages/49acab/" class="nav-link">IO设计模式</a></li><li class="dropdown-subitem"><a href="/pages/a3d832/" class="nav-link">IO模型总结</a></li><li class="dropdown-subitem"><a href="/pages/42be26/" class="nav-link">NIO核心知识总结</a></li></ul></li><li class="dropdown-item"><h4>IO流总结</h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/pages/77d4e2/" class="nav-link">IO基础知识</a></li><li class="dropdown-subitem"><a href="/pages/49acab/" class="nav-link">IO设计模式</a></li><li class="dropdown-subitem"><a href="/pages/a3d832/" class="nav-link">IO模型总结</a></li><li class="dropdown-subitem"><a href="/pages/42be26/" class="nav-link">NIO核心知识总结</a></li></ul></li><li class="dropdown-item"><h4>并发编程</h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/pages/77d4e2/" class="nav-link">IO基础知识</a></li><li class="dropdown-subitem"><a href="/pages/49acab/" class="nav-link">IO设计模式</a></li><li class="dropdown-subitem"><a href="/pages/a3d832/" class="nav-link">IO模型总结</a></li><li class="dropdown-subitem"><a href="/pages/42be26/" class="nav-link">NIO核心知识总结</a></li></ul></li><li class="dropdown-item"><h4>JVM</h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/pages/77d4e2/" class="nav-link">IO基础知识</a></li><li class="dropdown-subitem"><a href="/pages/49acab/" class="nav-link">IO设计模式</a></li><li class="dropdown-subitem"><a href="/pages/a3d832/" class="nav-link">IO模型总结</a></li><li class="dropdown-subitem"><a href="/pages/42be26/" class="nav-link">NIO核心知识总结</a></li></ul></li><li class="dropdown-item"><h4>版本新特性</h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/pages/cd056d/" class="nav-link">Java8新特性</a></li><li class="dropdown-subitem"><a href="/pages/b610cd/" class="nav-link">Java8指南中文翻译</a></li><li class="dropdown-subitem"><a href="/pages/1091ad/" class="nav-link">Java9新特性</a></li><li class="dropdown-subitem"><a href="/pages/e43406/" class="nav-link">Java10新特性</a></li><li class="dropdown-subitem"><a href="/pages/f37c60/" class="nav-link">Java11新特性</a></li><li class="dropdown-subitem"><a href="/pages/79a5f6/" class="nav-link">Java12-13新特性</a></li><li class="dropdown-subitem"><a href="/pages/683a03/" class="nav-link">Java14-15新特性</a></li><li class="dropdown-subitem"><a href="/pages/fa2c73/" class="nav-link">Java16新特性</a></li><li class="dropdown-subitem"><a href="/pages/245aa2/" class="nav-link">Java17新特性</a></li><li class="dropdown-subitem"><a href="/pages/ce76de/" class="nav-link">Java18新特性</a></li><li class="dropdown-subitem"><a href="/pages/42d550/" class="nav-link">Java19新特性</a></li><li class="dropdown-subitem"><a href="/pages/d5208b/" class="nav-link">Java20新特性</a></li><li class="dropdown-subitem"><a href="/pages/54087b/" class="nav-link">Java21新特性</a></li></ul></li><li class="dropdown-item"><h4>Springboot</h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/pages/be9ac8/" class="nav-link">IO基础知识</a></li><li class="dropdown-subitem"><a href="/pages/c6bced/" class="nav-link">Cookie、Session、JWT、Token</a></li></ul></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="微服务" class="dropdown-title"><a href="/pages/easytool/" class="link-title">微服务</a> <span class="title" style="display:none;">微服务</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/pages/easytool/" class="nav-link">设计初衷</a></li><li class="dropdown-item"><!----> <a href="/pages/dc4434/" class="nav-link">克隆</a></li><li class="dropdown-item"><!----> <a href="/pages/24d03b/" class="nav-link">类型转换</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="大数据" class="dropdown-title"><a href="/pages/easytool/" class="link-title">大数据</a> <span class="title" style="display:none;">大数据</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/pages/easytool/" class="nav-link">设计初衷</a></li><li class="dropdown-item"><!----> <a href="/pages/dc4434/" class="nav-link">克隆</a></li><li class="dropdown-item"><!----> <a href="/pages/24d03b/" class="nav-link">类型转换</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="🎖人工智能" class="dropdown-title"><a href="/pages/easytool/" class="link-title">🎖人工智能</a> <span class="title" style="display:none;">🎖人工智能</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><h4>机器学习</h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/pages/f1d3fb/" class="nav-link">吴恩达课程笔记</a></li></ul></li><li class="dropdown-item"><h4>深度学习</h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/pages/e50dff/" class="nav-link">简介</a></li><li class="dropdown-subitem"><a href="/pages/easytool/" class="nav-link">设计初衷</a></li></ul></li><li class="dropdown-item"><h4>大模型</h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/pages/e50dff/" class="nav-link">简介</a></li><li class="dropdown-subitem"><a href="/pages/easytool/" class="nav-link">设计初衷</a></li></ul></li><li class="dropdown-item"><h4>数字人</h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/pages/e50dff/" class="nav-link">简介</a></li><li class="dropdown-subitem"><a href="/pages/easytool/" class="nav-link">设计初衷</a></li></ul></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="中间件|部署" class="dropdown-title"><a href="/pages/e50dff/" class="link-title">中间件|部署</a> <span class="title" style="display:none;">中间件|部署</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><h4>Docker</h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/pages/e50dff/" class="nav-link">简介</a></li><li class="dropdown-subitem"><a href="/pages/f1d3fb/" class="nav-link">机器学习</a></li><li class="dropdown-subitem"><a href="/pages/fbe42b/" class="nav-link">Apisix</a></li><li class="dropdown-subitem"><a href="/pages/272684/" class="nav-link">Apollo</a></li><li class="dropdown-subitem"><a href="/pages/01958e/" class="nav-link">Cassandra</a></li><li class="dropdown-subitem"><a href="/pages/7e58c5/" class="nav-link">Cerebro</a></li><li class="dropdown-subitem"><a href="/pages/3b4977/" aria-current="page" class="nav-link router-link-exact-active router-link-active">ClickHouse</a></li><li class="dropdown-subitem"><a href="/pages/3d230b/" class="nav-link">Consul</a></li><li class="dropdown-subitem"><a href="/pages/ca4b88/" class="nav-link">EasyMock</a></li><li class="dropdown-subitem"><a href="/pages/18fff0/" class="nav-link">Elasticsearch</a></li><li class="dropdown-subitem"><a href="/pages/d93c0b/" class="nav-link">Emqx</a></li><li class="dropdown-subitem"><a href="/pages/7bfded/" class="nav-link">FastDFS</a></li><li class="dropdown-subitem"><a href="/pages/53b154/" class="nav-link">Flink</a></li><li class="dropdown-subitem"><a href="/pages/83a3e2/" class="nav-link">Gitlab</a></li><li class="dropdown-subitem"><a href="/pages/f90f99/" class="nav-link">Jenkins</a></li><li class="dropdown-subitem"><a href="/pages/8e9d93/" class="nav-link">Jrebel</a></li><li class="dropdown-subitem"><a href="/pages/ee069d/" class="nav-link">MariaDB</a></li><li class="dropdown-subitem"><a href="/pages/cff07b/" class="nav-link">MySQL</a></li><li class="dropdown-subitem"><a href="/pages/862a97/" class="nav-link">Percona</a></li><li class="dropdown-subitem"><a href="/pages/a560de/" class="nav-link">Phpmyadmin</a></li><li class="dropdown-subitem"><a href="/pages/230ca1/" class="nav-link">PostgreSQL</a></li><li class="dropdown-subitem"><a href="/pages/be7f5d/" class="nav-link">Redis</a></li></ul></li><li class="dropdown-item"><h4>Linux</h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/pages/518cfa/" class="nav-link">Linux命令查询</a></li><li class="dropdown-subitem"><a href="/pages/aa794b/" class="nav-link">查看Linux系统信息</a></li><li class="dropdown-subitem"><a href="/pages/2cbf35/" class="nav-link">CentOS7调整磁盘分区</a></li><li class="dropdown-subitem"><a href="/pages/42cda4/" class="nav-link">IO压测</a></li><li class="dropdown-subitem"><a href="/pages/71dd10/" class="nav-link">图形化监控工具Cockpit</a></li></ul></li><li class="dropdown-item"><h4>Redis</h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/pages/aa794b/" class="nav-link">查看Linux系统信息</a></li><li class="dropdown-subitem"><a href="/pages/2cbf35/" class="nav-link">CentOS7调整磁盘分区</a></li><li class="dropdown-subitem"><a href="/pages/42cda4/" class="nav-link">IO压测</a></li><li class="dropdown-subitem"><a href="/pages/71dd10/" class="nav-link">图形化监控工具Cockpit</a></li></ul></li><li class="dropdown-item"><h4>Kafka</h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/pages/aa794b/" class="nav-link">查看Linux系统信息</a></li><li class="dropdown-subitem"><a href="/pages/2cbf35/" class="nav-link">CentOS7调整磁盘分区</a></li><li class="dropdown-subitem"><a href="/pages/42cda4/" class="nav-link">IO压测</a></li><li class="dropdown-subitem"><a href="/pages/71dd10/" class="nav-link">图形化监控工具Cockpit</a></li></ul></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="面试宝典" class="dropdown-title"><a href="/pages/86a4e2/" class="link-title">面试宝典</a> <span class="title" style="display:none;">面试宝典</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/pages/86a4e2/" class="nav-link">AspNetCore面试题</a></li><li class="dropdown-item"><!----> <a href="/pages/a567cd/" class="nav-link">Elasticsearch面试题</a></li><li class="dropdown-item"><!----> <a href="/pages/5201b9/" class="nav-link">MongoDB面试题</a></li><li class="dropdown-item"><!----> <a href="/pages/43b4dd/" class="nav-link">MySql面试题</a></li><li class="dropdown-item"><!----> <a href="/pages/27153d/" class="nav-link">Nginx面试题</a></li><li class="dropdown-item"><!----> <a href="/pages/d74e41/" class="nav-link">RabbitMQ面试题</a></li><li class="dropdown-item"><!----> <a href="/pages/97e5f1/" class="nav-link">Redis面试题</a></li><li class="dropdown-item"><!----> <a href="/pages/51830e/" class="nav-link">设计模式</a></li><li class="dropdown-item"><!----> <a href="/pages/11e99f/" class="nav-link">微服务</a></li></ul></div></div><div class="nav-item"><a href="https://debug.group/string-diff.html" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  在线工具箱
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></div> <a href="https://github.com/Gresdy" target="_blank" rel="noopener noreferrer" class="repo-link">
+    GitHub
+    <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></nav>  <ul class="sidebar-links"><li><section class="sidebar-group depth-0"><p class="sidebar-heading open"><span>Docker</span> <!----></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/pages/e50dff/" class="sidebar-link">开源简介</a></li><li><a href="/pages/f1d3fb/" class="sidebar-link">吴恩达机器学习视频</a></li><li><a href="/pages/fbe42b/" class="sidebar-link">Apisix</a></li><li><a href="/pages/272684/" class="sidebar-link">Apollo</a></li><li><a href="/pages/01958e/" class="sidebar-link">Cassandra</a></li><li><a href="/pages/7e58c5/" class="sidebar-link">Cerebro</a></li><li><a href="/pages/3b4977/" aria-current="page" class="active sidebar-link">ClickHouse</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header level2"><a href="/pages/3b4977/#clickhouse-列式储存数据库" class="sidebar-link">ClickHouse 列式储存数据库</a></li><li class="sidebar-sub-header level2"><a href="/pages/3b4977/#简介" class="sidebar-link">简介</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header level3"><a href="/pages/3b4977/#主要功能" class="sidebar-link">主要功能</a></li><li class="sidebar-sub-header level3"><a href="/pages/3b4977/#应用场景" class="sidebar-link">应用场景</a></li></ul></li><li class="sidebar-sub-header level2"><a href="/pages/3b4977/#常用sql" class="sidebar-link">常用sql</a></li><li class="sidebar-sub-header level2"><a href="/pages/3b4977/#docker-compose-yml" class="sidebar-link">docker-compose.yml</a></li><li class="sidebar-sub-header level2"><a href="/pages/3b4977/#config-xml" class="sidebar-link">config.xml</a></li><li class="sidebar-sub-header level2"><a href="/pages/3b4977/#users-xml" class="sidebar-link">users.xml</a></li><li class="sidebar-sub-header level2"><a href="/pages/3b4977/#deploy-sh" class="sidebar-link">deploy.sh</a></li></ul></li><li><a href="/pages/3d230b/" class="sidebar-link">Consul</a></li><li><a href="/pages/ca4b88/" class="sidebar-link">EasyMock</a></li><li><a href="/pages/18fff0/" class="sidebar-link">Elasticsearch</a></li><li><a href="/pages/d93c0b/" class="sidebar-link">Emqx</a></li><li><a href="/pages/7bfded/" class="sidebar-link">FastDFS</a></li><li><a href="/pages/53b154/" class="sidebar-link">Flink</a></li><li><a href="/pages/83a3e2/" class="sidebar-link">Gitlab</a></li><li><a href="/pages/f90f99/" class="sidebar-link">Jenkins</a></li><li><a href="/pages/8e9d93/" class="sidebar-link">Jrebel</a></li><li><a href="/pages/ee069d/" class="sidebar-link">MariaDB</a></li><li><a href="/pages/cff07b/" class="sidebar-link">MySQL</a></li><li><a href="/pages/862a97/" class="sidebar-link">Percona</a></li><li><a href="/pages/a560de/" class="sidebar-link">Phpmyadmin</a></li><li><a href="/pages/230ca1/" class="sidebar-link">PostgreSQL</a></li><li><a href="/pages/be7f5d/" class="sidebar-link">Redis</a></li></ul></section></li><li><section class="sidebar-group depth-0"><p class="sidebar-heading"><span>Linux</span> <!----></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/pages/aa794b/" class="sidebar-link">查看Linux系统信息</a></li><li><a href="/pages/2cbf35/" class="sidebar-link">CentOS7调整磁盘分区</a></li><li><a href="/pages/42cda4/" class="sidebar-link">IO压测</a></li><li><a href="/pages/71dd10/" class="sidebar-link">Linux图形化监控工具Cockpit</a></li><li><a href="/pages/6db179/" class="sidebar-link">CentOS7安装mysql5.7</a></li><li><a href="/pages/518cfa/" class="sidebar-link">在线Linux命令查询</a></li></ul></section></li></ul> </aside> <div><main class="page"><div class="theme-vdoing-wrapper "><div class="placeholder"></div> <!----> <div class="content-wrapper"><div class="right-menu-wrapper"><div class="right-menu-margin"><div class="right-menu-title">目录</div> <div class="right-menu-content"></div></div></div> <h1><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAYAAAA7MK6iAAAAAXNSR0IArs4c6QAABGpJREFUSA3tVVtoXFUU3fvOI53UlmCaKIFmwEhsE7QK0ipFEdHEKpXaZGrp15SINsXUWvBDpBgQRKi0+KKoFeJHfZA+ED9KKoIU2gYD9UejTW4rVIzm0VSTziPzuNu1z507dibTTjL4U/DAzLn3nL3X2o91ziX6f9wMFdh6Jvbm9nNSV0msViVO6tN1Rm7NMu2OpeJ9lWBUTDxrJbYTS0hInuwciu9eLHlFxCLCZEk3MegsJmZ5K/JD6t7FkFdEvGUo1g7qJoG3MHImqRIn8/nzY1K9UPKKiJmtnUqHVE3Gbuay6vJE/N2FEmuxFjW2nUuE0yQXRRxLiTUAzs36zhZvOXJPdX850EVnnLZkB8prodQoM5JGj7Xk2mvC7JB8tG04Ef5PiXtG0UtxupRQSfTnBoCy554x18yJHI6I+G5Eru4LHmPJZEQsrvPUbMiA8G/WgMK7w7I+ez7++o2ANfbrjvaOl1tFMs+htG3IrZH9/hDX1Pr8Tc0UvH8tcX29KzAgIGcEkINyW5BF9x891hw6VYqgJHEk0huccS7vh3C6gTiODL+26huuBtbct8eZnqLML8PkxGYpuPZBqtqwkSjgc4mB5gbgig5i+y0UDK35LMxXisn9xQtK+nd26gTIHsHe/oblK/b29fUmN/8Y+9jAQrnBp56m1LcDlDp9irKTExSKduXJVWSqdBMA08pEJnEIOB3FPPMybu/oeV8zFeYN3xx576Q6RH+VmplE4ncQV5v+5rzSoyOU7PuEAg8g803PwBJ0CExno/jcMbN8tONYeOmHiuUNryvm3fRUy4tMPVLdAGkUhNWuggGrJcXPv+ouCjz0MKUHz1J2/E8IC9nqTabcxgaBYM0hPhD5Y65FsbxRQKxCQrDjDctW7PUM3HuZunFyifSAqEfuzCp48Il24luWUWZoyJCaPR82jE0+kFA643wRFVni4RYSq3ohJO2pZ7B5dO4xkDWbEpossJPLSrPjYID8rS2UHTlvyNxqIGsg674XJJ7vnh5L7PNwC4hh2sjCI96mzszOTpxLF0T7l88Yz7lAuK6OnL8gXLOnTvpzSb22YG8W7us3jSebFHeeqnXRG1vt+MoUM84LQIBmMsCTAcOauTh0T0l0neQK7m2bLMt2mGxU3HYssS0J2cdv5wljlPsrIuZLAG/2DOZIXgCYT8uMGZN+e2kSirfxZOPCsC0f24nTZzspnVn9VePS1Z5vubmAGGXG8ZFno9Hel0yfA5ZPhF7Dh972BQJ2qCpgH67lmWtBYbvk6sz02wjky2vXyz0XErP/kFB619js1BtwfOV4OPRqOQBjy3Qbk18vigUPPSD5ceHnwck7W9bhAqZdd7SuG7w4/P2F/GaJh8c7e9qgow+Q7cGBo+98WsLkuktFqiZabtXuQTu/Y5ETbR0v7tNSFnvrmu6pjdoan2KjMu8q/Hmj1EfCO2ZGfEIbIXKUlw8qaX9/b2oeSJmFksSeT/Fn0V3nSypChh4Gjh74ybO9aeZ/AN2dwciu2/MhAAAAAElFTkSuQmCC">ClickHouse<!----></h1>  <div class="theme-vdoing-content content__default"><h2 id="clickhouse-列式储存数据库"><a href="#clickhouse-列式储存数据库" class="header-anchor">#</a> ClickHouse 列式储存数据库</h2> <div class="custom-block note"><p class="custom-block-title">开源网址</p> <p>官网：https://clickhouse.com/</p> <p>github：https://github.com/ClickHouse/ClickHouse</p></div> <h2 id="简介"><a href="#简介" class="header-anchor">#</a> 简介</h2> <p><img src="/img/docker/clickhouse.png" alt="clickhouse"></p> <blockquote><p>ClickHouse 是俄罗斯第一大搜索引擎 Yandex 开发的列式储存数据库。令人惊喜的是，这个列式储存数据库的性能大幅超越了很多商业 MPP 数据库软件，比如 Vertica,InfiniDB.</p></blockquote> <p>相比传统的数据库软件，ClickHouse 要快 100-1000X:</p> <p><strong>100Million 数据集:</strong></p> <ul><li>ClickHouse 比 Vertica 约快 5 倍，比 Hive 快 279 倍，比 My SQL 快 801 倍</li></ul> <p><strong>1Billion 数据集:</strong></p> <ul><li>ClickHouse 比 Vertica 约快 5 倍，MySQL 和 Hive 已经无法完成任务了</li></ul> <p>该项目当前还有<strong>一些不足</strong>:</p> <ul><li>pre-build 包只有 Ubuntu 平台的可用，并且该项目当前没有任何架构文档</li> <li>只有 Github 上面的 C++ 源代码</li></ul> <h3 id="主要功能"><a href="#主要功能" class="header-anchor">#</a> 主要功能</h3> <ul><li>True column-oriented</li> <li>Vectorized query execution</li> <li>Data compression</li> <li>Parallel and distributed query execution</li> <li>Real-time data ingestion</li> <li>On-disk locality of reference</li> <li>Real-time query processing</li> <li>Cross-datacenter replication</li> <li>High availability</li> <li>SQL support</li> <li>Local and distributed joins</li> <li>Pluggable external dimension tables</li> <li>Arrays and nested data types</li> <li>Approximate query processing</li> <li>Probabilistic data structures</li> <li>Full support of IPv6</li> <li>Features for web analytics</li> <li>State-of-the-art algorithms</li> <li>Detailed documentation</li> <li>Clean documented code</li></ul> <h3 id="应用场景"><a href="#应用场景" class="header-anchor">#</a> 应用场景</h3> <ul><li>Web and App analytics</li> <li>Advertising networks and RTB</li> <li>Telecommunications</li> <li>E-commerce</li> <li>Information security</li> <li>Monitoring and telemetry</li> <li>Business intelligence</li> <li>Online games</li> <li>Internet of Things</li></ul> <h2 id="常用sql"><a href="#常用sql" class="header-anchor">#</a> 常用sql</h2> <div class="language-sql extra-class"><pre class="language-sql"><code><span class="token comment">-- 查询连接数</span>
+<span class="token keyword">SELECT</span> <span class="token operator">*</span> <span class="token keyword">FROM</span> system<span class="token punctuation">.</span>metrics <span class="token keyword">WHERE</span> metric <span class="token operator">LIKE</span> <span class="token string">'%Connection'</span><span class="token punctuation">;</span>
+
+
+<span class="token comment">-- 当前正在执行的查询</span>
+<span class="token keyword">SELECT</span> query_id<span class="token punctuation">,</span> <span class="token keyword">user</span><span class="token punctuation">,</span> address<span class="token punctuation">,</span> query  <span class="token keyword">FROM</span> system<span class="token punctuation">.</span>processes <span class="token keyword">ORDER</span> <span class="token keyword">BY</span> query_id<span class="token punctuation">;</span>
+
+<span class="token comment">-- 存储空间统计</span>
+<span class="token keyword">SELECT</span> name<span class="token punctuation">,</span>path<span class="token punctuation">,</span>formatReadableSize<span class="token punctuation">(</span>free_space<span class="token punctuation">)</span> <span class="token keyword">AS</span> free<span class="token punctuation">,</span>formatReadableSize<span class="token punctuation">(</span>total_space<span class="token punctuation">)</span> <span class="token keyword">AS</span> total<span class="token punctuation">,</span>formatReadableSize<span class="token punctuation">(</span>keep_free_space<span class="token punctuation">)</span> <span class="token keyword">AS</span> reserved <span class="token keyword">FROM</span> system<span class="token punctuation">.</span>disks<span class="token punctuation">;</span>
+
+<span class="token comment">-- 慢查询</span>
+<span class="token keyword">SELECT</span>
+    <span class="token keyword">user</span><span class="token punctuation">,</span>
+    client_hostname <span class="token keyword">AS</span> host<span class="token punctuation">,</span>
+    client_name <span class="token keyword">AS</span> client<span class="token punctuation">,</span>
+    formatDateTime<span class="token punctuation">(</span>query_start_time<span class="token punctuation">,</span> <span class="token string">'%T'</span><span class="token punctuation">)</span> <span class="token keyword">AS</span> started<span class="token punctuation">,</span>
+    query_duration_ms <span class="token operator">/</span> <span class="token number">1000</span> <span class="token keyword">AS</span> sec<span class="token punctuation">,</span>
+    <span class="token function">round</span><span class="token punctuation">(</span>memory_usage <span class="token operator">/</span> <span class="token number">1048576</span><span class="token punctuation">)</span> <span class="token keyword">AS</span> MEM_MB<span class="token punctuation">,</span>
+    result_rows <span class="token keyword">AS</span> RES_CNT<span class="token punctuation">,</span>
+    result_bytes <span class="token operator">/</span> <span class="token number">1048576</span> <span class="token keyword">AS</span> RES_MB<span class="token punctuation">,</span>
+    read_rows <span class="token keyword">AS</span> R_CNT<span class="token punctuation">,</span>
+    <span class="token function">round</span><span class="token punctuation">(</span>read_bytes <span class="token operator">/</span> <span class="token number">1048576</span><span class="token punctuation">)</span> <span class="token keyword">AS</span> R_MB<span class="token punctuation">,</span>
+    written_rows <span class="token keyword">AS</span> W_CNT<span class="token punctuation">,</span>
+    <span class="token function">round</span><span class="token punctuation">(</span>written_bytes <span class="token operator">/</span> <span class="token number">1048576</span><span class="token punctuation">)</span> <span class="token keyword">AS</span> W_MB<span class="token punctuation">,</span>
+    query
+<span class="token keyword">FROM</span> system<span class="token punctuation">.</span>query_log
+<span class="token keyword">WHERE</span> <span class="token keyword">type</span> <span class="token operator">=</span> <span class="token number">2</span>
+<span class="token keyword">ORDER</span> <span class="token keyword">BY</span> query_duration_ms <span class="token keyword">DESC</span>
+    <span class="token keyword">LIMIT</span> <span class="token number">10</span><span class="token punctuation">;</span>
+
+<span class="token comment">-- 查看库表资源占用情况</span>
+<span class="token keyword">select</span>
+    <span class="token function">sum</span><span class="token punctuation">(</span><span class="token keyword">rows</span><span class="token punctuation">)</span> <span class="token keyword">as</span> <span class="token keyword">row</span><span class="token punctuation">,</span><span class="token comment">--总行数</span>
+    formatReadableSize<span class="token punctuation">(</span><span class="token function">sum</span><span class="token punctuation">(</span>data_uncompressed_bytes<span class="token punctuation">)</span><span class="token punctuation">)</span> <span class="token keyword">as</span> ysq<span class="token punctuation">,</span><span class="token comment">--原始大小</span>
+    formatReadableSize<span class="token punctuation">(</span><span class="token function">sum</span><span class="token punctuation">(</span>data_compressed_bytes<span class="token punctuation">)</span><span class="token punctuation">)</span> <span class="token keyword">as</span> ysh<span class="token punctuation">,</span><span class="token comment">--压缩大小</span>
+    <span class="token function">round</span><span class="token punctuation">(</span><span class="token function">sum</span><span class="token punctuation">(</span>data_compressed_bytes<span class="token punctuation">)</span> <span class="token operator">/</span> <span class="token function">sum</span><span class="token punctuation">(</span>data_uncompressed_bytes<span class="token punctuation">)</span> <span class="token operator">*</span> <span class="token number">100</span><span class="token punctuation">,</span> <span class="token number">0</span><span class="token punctuation">)</span> ys_rate<span class="token comment">--压缩率</span>
+<span class="token keyword">from</span> system<span class="token punctuation">.</span>parts
+<span class="token keyword">where</span> <span class="token keyword">database</span><span class="token operator">=</span><span class="token string">'datacenter'</span><span class="token punctuation">;</span>
+
+<span class="token comment">-- 查看库中表行数统计</span>
+<span class="token keyword">select</span> <span class="token keyword">database</span><span class="token punctuation">,</span><span class="token keyword">table</span><span class="token punctuation">,</span><span class="token function">sum</span><span class="token punctuation">(</span><span class="token keyword">rows</span><span class="token punctuation">)</span> <span class="token keyword">as</span> <span class="token keyword">rows</span>
+<span class="token keyword">from</span> system<span class="token punctuation">.</span>parts
+<span class="token keyword">where</span> <span class="token keyword">database</span><span class="token operator">=</span><span class="token string">'datacenter'</span>
+<span class="token keyword">group</span> <span class="token keyword">by</span> <span class="token keyword">database</span><span class="token punctuation">,</span> <span class="token keyword">table</span>
+<span class="token keyword">order</span> <span class="token keyword">by</span> <span class="token keyword">rows</span> <span class="token keyword">desc</span><span class="token punctuation">;</span>
+
+
+<span class="token keyword">select</span> <span class="token keyword">distinct</span> <span class="token keyword">table</span> <span class="token keyword">from</span> system<span class="token punctuation">.</span>parts <span class="token keyword">where</span> <span class="token keyword">database</span><span class="token operator">=</span><span class="token string">'datacenter'</span><span class="token punctuation">;</span>
+
+
+<span class="token comment">-- drop  database datacenter;</span>
+
+<span class="token keyword">select</span> <span class="token operator">*</span> <span class="token keyword">from</span> datacenter<span class="token punctuation">.</span><span class="token identifier"><span class="token punctuation">`</span>3cdb162688e14cc6a1bc65befca5347c_YC150<span class="token punctuation">`</span></span><span class="token punctuation">;</span>
+</code></pre></div><h2 id="docker-compose-yml"><a href="#docker-compose-yml" class="header-anchor">#</a> docker-compose.yml</h2> <div class="language-yaml extra-class"><pre class="language-yaml"><code><span class="token key atrule">version</span><span class="token punctuation">:</span> <span class="token string">'3.7'</span>
+
+<span class="token key atrule">services</span><span class="token punctuation">:</span> 
+
+  <span class="token key atrule">clickhouseserver</span><span class="token punctuation">:</span> 
+    <span class="token key atrule">image</span><span class="token punctuation">:</span> yandex/clickhouse<span class="token punctuation">-</span>server<span class="token punctuation">:</span><span class="token number">21</span>
+    <span class="token key atrule">container_name</span><span class="token punctuation">:</span> clickhouseserver
+    <span class="token key atrule">restart</span><span class="token punctuation">:</span> always
+    <span class="token key atrule">hostname</span><span class="token punctuation">:</span> clickhouse
+    <span class="token key atrule">volumes</span><span class="token punctuation">:</span> 
+      <span class="token punctuation">-</span> data<span class="token punctuation">:</span>/var/lib/clickhouse
+      <span class="token punctuation">-</span> /etc/clickhouse/config.xml<span class="token punctuation">:</span>/etc/clickhouse<span class="token punctuation">-</span>server/config.xml
+      <span class="token punctuation">-</span> /etc/clickhouse/users.xml<span class="token punctuation">:</span>/etc/clickhouse<span class="token punctuation">-</span>server/users.xml
+    <span class="token key atrule">ports</span><span class="token punctuation">:</span>
+      <span class="token punctuation">-</span> 8123<span class="token punctuation">:</span><span class="token number">8123</span>
+      <span class="token punctuation">-</span> 9000<span class="token punctuation">:</span><span class="token number">9000</span>
+    <span class="token key atrule">environment</span><span class="token punctuation">:</span>
+      <span class="token key atrule">TZ</span><span class="token punctuation">:</span> Asia/Shanghai 
+  
+  <span class="token comment"># clickhouseclient:</span>
+  <span class="token comment">#   image: yandex/clickhouse-client:21</span>
+  <span class="token comment">#   container_name: clickhouseclient</span>
+  <span class="token comment">#   restart: always</span>
+  <span class="token comment">#   environment:</span>
+  <span class="token comment">#     TZ: Asia/Shanghai</span>
+  <span class="token comment">#   depends_on: ['clickhouseserver']</span>
+
+  <span class="token comment">#docker run -it --rm --link clickhouseserver --net swarm_net yandex/clickhouse-client:21 --host clickhouseserver</span>
+
+<span class="token key atrule">volumes</span><span class="token punctuation">:</span> 
+  <span class="token key atrule">data</span><span class="token punctuation">:</span> 
+    <span class="token key atrule">driver</span><span class="token punctuation">:</span> local
+</code></pre></div><h2 id="config-xml"><a href="#config-xml" class="header-anchor">#</a> config.xml</h2> <div class="language-xml extra-class"><pre class="language-xml"><code><span class="token prolog">&lt;?xml version=&quot;1.0&quot;?&gt;</span>
+<span class="token comment">&lt;!--
+  NOTE: User and query level settings are set up in &quot;users.xml&quot; file.
+  If you have accidentally specified user-level settings here, server won't start.
+  You can either move the settings to the right place inside &quot;users.xml&quot; file
+   or add &lt;skip_check_for_incorrect_settings&gt;1&lt;/skip_check_for_incorrect_settings&gt; here.
+--&gt;</span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>yandex</span><span class="token punctuation">&gt;</span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>logger</span><span class="token punctuation">&gt;</span></span>
+        <span class="token comment">&lt;!-- Possible levels [1]:
+
+          - none (turns off logging)
+          - fatal
+          - critical
+          - error
+          - warning
+          - notice
+          - information
+          - debug
+          - trace
+
+            [1]: https://github.com/pocoproject/poco/blob/poco-1.9.4-release/Foundation/include/Poco/Logger.h#L105-L114
+        --&gt;</span>
+        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>level</span><span class="token punctuation">&gt;</span></span>trace<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>level</span><span class="token punctuation">&gt;</span></span>
+        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>log</span><span class="token punctuation">&gt;</span></span>/var/log/clickhouse-server/clickhouse-server.log<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>log</span><span class="token punctuation">&gt;</span></span>
+        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>errorlog</span><span class="token punctuation">&gt;</span></span>/var/log/clickhouse-server/clickhouse-server.err.log<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>errorlog</span><span class="token punctuation">&gt;</span></span>
+        <span class="token comment">&lt;!-- Rotation policy
+             See https://github.com/pocoproject/poco/blob/poco-1.9.4-release/Foundation/include/Poco/FileChannel.h#L54-L85
+          --&gt;</span>
+        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>size</span><span class="token punctuation">&gt;</span></span>1000M<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>size</span><span class="token punctuation">&gt;</span></span>
+        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>count</span><span class="token punctuation">&gt;</span></span>10<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>count</span><span class="token punctuation">&gt;</span></span>
+        <span class="token comment">&lt;!-- &lt;console&gt;1&lt;/console&gt; --&gt;</span> <span class="token comment">&lt;!-- Default behavior is autodetection (log to console if not daemon mode and is tty) --&gt;</span>
+
+        <span class="token comment">&lt;!-- Per level overrides (legacy):
+
+        For example to suppress logging of the ConfigReloader you can use:
+        NOTE: levels.logger is reserved, see below.
+        --&gt;</span>
+        <span class="token comment">&lt;!--
+        &lt;levels&gt;
+          &lt;ConfigReloader&gt;none&lt;/ConfigReloader&gt;
+        &lt;/levels&gt;
+        --&gt;</span>
+
+        <span class="token comment">&lt;!-- Per level overrides:
+
+        For example to suppress logging of the RBAC for default user you can use:
+        (But please note that the logger name maybe changed from version to version, even after minor upgrade)
+        --&gt;</span>
+        <span class="token comment">&lt;!--
+        &lt;levels&gt;
+          &lt;logger&gt;
+            &lt;name&gt;ContextAccess (default)&lt;/name&gt;
+            &lt;level&gt;none&lt;/level&gt;
+          &lt;/logger&gt;
+          &lt;logger&gt;
+            &lt;name&gt;DatabaseOrdinary (test)&lt;/name&gt;
+            &lt;level&gt;none&lt;/level&gt;
+          &lt;/logger&gt;
+        &lt;/levels&gt;
+        --&gt;</span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>logger</span><span class="token punctuation">&gt;</span></span>
+
+    <span class="token comment">&lt;!-- It is the name that will be shown in the clickhouse-client.
+         By default, anything with &quot;production&quot; will be highlighted in red in query prompt.
+    --&gt;</span>
+    <span class="token comment">&lt;!--display_name&gt;production&lt;/display_name--&gt;</span>
+
+    <span class="token comment">&lt;!-- Port for HTTP API. See also 'https_port' for secure connections.
+         This interface is also used by ODBC and JDBC drivers (DataGrip, Dbeaver, ...)
+         and by most of web interfaces (embedded UI, Grafana, Redash, ...).
+      --&gt;</span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>http_port</span><span class="token punctuation">&gt;</span></span>8123<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>http_port</span><span class="token punctuation">&gt;</span></span>
+
+    <span class="token comment">&lt;!-- Port for interaction by native protocol with:
+         - clickhouse-client and other native ClickHouse tools (clickhouse-benchmark, clickhouse-copier);
+         - clickhouse-server with other clickhouse-servers for distributed query processing;
+         - ClickHouse drivers and applications supporting native protocol
+         (this protocol is also informally called as &quot;the TCP protocol&quot;);
+         See also 'tcp_port_secure' for secure connections.
+    --&gt;</span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>tcp_port</span><span class="token punctuation">&gt;</span></span>9000<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>tcp_port</span><span class="token punctuation">&gt;</span></span>
+
+    <span class="token comment">&lt;!-- Compatibility with MySQL protocol.
+         ClickHouse will pretend to be MySQL for applications connecting to this port.
+    --&gt;</span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>mysql_port</span><span class="token punctuation">&gt;</span></span>9004<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>mysql_port</span><span class="token punctuation">&gt;</span></span>
+
+    <span class="token comment">&lt;!-- Compatibility with PostgreSQL protocol.
+         ClickHouse will pretend to be PostgreSQL for applications connecting to this port.
+    --&gt;</span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>postgresql_port</span><span class="token punctuation">&gt;</span></span>9005<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>postgresql_port</span><span class="token punctuation">&gt;</span></span>
+
+    <span class="token comment">&lt;!-- HTTP API with TLS (HTTPS).
+         You have to configure certificate to enable this interface.
+         See the openSSL section below.
+    --&gt;</span>
+    <span class="token comment">&lt;!-- &lt;https_port&gt;8443&lt;/https_port&gt; --&gt;</span>
+
+    <span class="token comment">&lt;!-- Native interface with TLS.
+         You have to configure certificate to enable this interface.
+         See the openSSL section below.
+    --&gt;</span>
+    <span class="token comment">&lt;!-- &lt;tcp_port_secure&gt;9440&lt;/tcp_port_secure&gt; --&gt;</span>
+
+    <span class="token comment">&lt;!-- Native interface wrapped with PROXYv1 protocol
+         PROXYv1 header sent for every connection.
+         ClickHouse will extract information about proxy-forwarded client address from the header.
+    --&gt;</span>
+    <span class="token comment">&lt;!-- &lt;tcp_with_proxy_port&gt;9011&lt;/tcp_with_proxy_port&gt; --&gt;</span>
+
+    <span class="token comment">&lt;!-- Port for communication between replicas. Used for data exchange.
+         It provides low-level data access between servers.
+         This port should not be accessible from untrusted networks.
+         See also 'interserver_http_credentials'.
+         Data transferred over connections to this port should not go through untrusted networks.
+         See also 'interserver_https_port'.
+      --&gt;</span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>interserver_http_port</span><span class="token punctuation">&gt;</span></span>9009<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>interserver_http_port</span><span class="token punctuation">&gt;</span></span>
+
+    <span class="token comment">&lt;!-- Port for communication between replicas with TLS.
+         You have to configure certificate to enable this interface.
+         See the openSSL section below.
+         See also 'interserver_http_credentials'.
+      --&gt;</span>
+    <span class="token comment">&lt;!-- &lt;interserver_https_port&gt;9010&lt;/interserver_https_port&gt; --&gt;</span>
+
+    <span class="token comment">&lt;!-- Hostname that is used by other replicas to request this server.
+         If not specified, than it is determined analogous to 'hostname -f' command.
+         This setting could be used to switch replication to another network interface
+         (the server may be connected to multiple networks via multiple addresses)
+      --&gt;</span>
+    <span class="token comment">&lt;!--
+    &lt;interserver_http_host&gt;example.yandex.ru&lt;/interserver_http_host&gt;
+    --&gt;</span>
+
+    <span class="token comment">&lt;!-- You can specify credentials for authenthication between replicas.
+         This is required when interserver_https_port is accessible from untrusted networks,
+         and also recommended to avoid SSRF attacks from possibly compromised services in your network.
+      --&gt;</span>
+    <span class="token comment">&lt;!--&lt;interserver_http_credentials&gt;
+        &lt;user&gt;interserver&lt;/user&gt;
+        &lt;password&gt;&lt;/password&gt;
+    &lt;/interserver_http_credentials&gt;--&gt;</span>
+
+    <span class="token comment">&lt;!-- Listen specified address.
+         Use :: (wildcard IPv6 address), if you want to accept connections both with IPv4 and IPv6 from everywhere.
+         Notes:
+         If you open connections from wildcard address, make sure that at least one of the following measures applied:
+         - server is protected by firewall and not accessible from untrusted networks;
+         - all users are restricted to subset of network addresses (see users.xml);
+         - all users have strong passwords, only secure (TLS) interfaces are accessible, or connections are only made via TLS interfaces.
+         - users without password have readonly access.
+         See also: https://www.shodan.io/search?query=clickhouse
+      --&gt;</span>
+    <span class="token comment">&lt;!-- &lt;listen_host&gt;::&lt;/listen_host&gt; --&gt;</span>
+
+    <span class="token comment">&lt;!-- Same for hosts without support for IPv6: --&gt;</span>
+    <span class="token comment">&lt;!-- &lt;listen_host&gt;0.0.0.0&lt;/listen_host&gt; --&gt;</span>
+
+    <span class="token comment">&lt;!-- Default values - try listen localhost on IPv4 and IPv6. --&gt;</span>
+    <span class="token comment">&lt;!--
+    &lt;listen_host&gt;::1&lt;/listen_host&gt;
+    &lt;listen_host&gt;127.0.0.1&lt;/listen_host&gt;
+    --&gt;</span>
+
+    <span class="token comment">&lt;!-- Don't exit if IPv6 or IPv4 networks are unavailable while trying to listen. --&gt;</span>
+    <span class="token comment">&lt;!-- &lt;listen_try&gt;0&lt;/listen_try&gt; --&gt;</span>
+
+    <span class="token comment">&lt;!-- Allow multiple servers to listen on the same address:port. This is not recommended.
+      --&gt;</span>
+    <span class="token comment">&lt;!-- &lt;listen_reuse_port&gt;0&lt;/listen_reuse_port&gt; --&gt;</span>
+
+    <span class="token comment">&lt;!-- &lt;listen_backlog&gt;64&lt;/listen_backlog&gt; --&gt;</span>
+
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>max_connections</span><span class="token punctuation">&gt;</span></span>4096<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>max_connections</span><span class="token punctuation">&gt;</span></span>
+
+    <span class="token comment">&lt;!-- For 'Connection: keep-alive' in HTTP 1.1 --&gt;</span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>keep_alive_timeout</span><span class="token punctuation">&gt;</span></span>3<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>keep_alive_timeout</span><span class="token punctuation">&gt;</span></span>
+
+    <span class="token comment">&lt;!-- gRPC protocol (see src/Server/grpc_protos/clickhouse_grpc.proto for the API) --&gt;</span>
+    <span class="token comment">&lt;!-- &lt;grpc_port&gt;9100&lt;/grpc_port&gt; --&gt;</span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>grpc</span><span class="token punctuation">&gt;</span></span>
+        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>enable_ssl</span><span class="token punctuation">&gt;</span></span>false<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>enable_ssl</span><span class="token punctuation">&gt;</span></span>
+
+        <span class="token comment">&lt;!-- The following two files are used only if enable_ssl=1 --&gt;</span>
+        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>ssl_cert_file</span><span class="token punctuation">&gt;</span></span>/path/to/ssl_cert_file<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>ssl_cert_file</span><span class="token punctuation">&gt;</span></span>
+        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>ssl_key_file</span><span class="token punctuation">&gt;</span></span>/path/to/ssl_key_file<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>ssl_key_file</span><span class="token punctuation">&gt;</span></span>
+
+        <span class="token comment">&lt;!-- Whether server will request client for a certificate --&gt;</span>
+        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>ssl_require_client_auth</span><span class="token punctuation">&gt;</span></span>false<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>ssl_require_client_auth</span><span class="token punctuation">&gt;</span></span>
+
+        <span class="token comment">&lt;!-- The following file is used only if ssl_require_client_auth=1 --&gt;</span>
+        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>ssl_ca_cert_file</span><span class="token punctuation">&gt;</span></span>/path/to/ssl_ca_cert_file<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>ssl_ca_cert_file</span><span class="token punctuation">&gt;</span></span>
+
+        <span class="token comment">&lt;!-- Default compression algorithm (applied if client doesn't specify another algorithm).
+             Supported algorithms: none, deflate, gzip, stream_gzip --&gt;</span>
+        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>compression</span><span class="token punctuation">&gt;</span></span>deflate<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>compression</span><span class="token punctuation">&gt;</span></span>
+
+        <span class="token comment">&lt;!-- Default compression level (applied if client doesn't specify another level).
+             Supported levels: none, low, medium, high --&gt;</span>
+        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>compression_level</span><span class="token punctuation">&gt;</span></span>medium<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>compression_level</span><span class="token punctuation">&gt;</span></span>
+
+        <span class="token comment">&lt;!-- Send/receive message size limits in bytes. -1 means unlimited --&gt;</span>
+        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>max_send_message_size</span><span class="token punctuation">&gt;</span></span>-1<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>max_send_message_size</span><span class="token punctuation">&gt;</span></span>
+        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>max_receive_message_size</span><span class="token punctuation">&gt;</span></span>-1<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>max_receive_message_size</span><span class="token punctuation">&gt;</span></span>
+
+        <span class="token comment">&lt;!-- Enable if you want very detailed logs --&gt;</span>
+        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>verbose_logs</span><span class="token punctuation">&gt;</span></span>false<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>verbose_logs</span><span class="token punctuation">&gt;</span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>grpc</span><span class="token punctuation">&gt;</span></span>
+
+    <span class="token comment">&lt;!-- Used with https_port and tcp_port_secure. Full ssl options list: https://github.com/ClickHouse-Extras/poco/blob/master/NetSSL_OpenSSL/include/Poco/Net/SSLManager.h#L71 --&gt;</span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>openSSL</span><span class="token punctuation">&gt;</span></span>
+        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>server</span><span class="token punctuation">&gt;</span></span> <span class="token comment">&lt;!-- Used for https server AND secure tcp port --&gt;</span>
+            <span class="token comment">&lt;!-- openssl req -subj &quot;/CN=localhost&quot; -new -newkey rsa:2048 -days 365 -nodes -x509 -keyout /etc/clickhouse-server/server.key -out /etc/clickhouse-server/server.crt --&gt;</span>
+            <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>certificateFile</span><span class="token punctuation">&gt;</span></span>/etc/clickhouse-server/server.crt<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>certificateFile</span><span class="token punctuation">&gt;</span></span>
+            <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>privateKeyFile</span><span class="token punctuation">&gt;</span></span>/etc/clickhouse-server/server.key<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>privateKeyFile</span><span class="token punctuation">&gt;</span></span>
+            <span class="token comment">&lt;!-- dhparams are optional. You can delete the &lt;dhParamsFile&gt; element.
+                 To generate dhparams, use the following command:
+                  openssl dhparam -out /etc/clickhouse-server/dhparam.pem 4096
+                 Only file format with BEGIN DH PARAMETERS is supported.
+              --&gt;</span>
+            <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>dhParamsFile</span><span class="token punctuation">&gt;</span></span>/etc/clickhouse-server/dhparam.pem<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>dhParamsFile</span><span class="token punctuation">&gt;</span></span>
+            <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>verificationMode</span><span class="token punctuation">&gt;</span></span>none<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>verificationMode</span><span class="token punctuation">&gt;</span></span>
+            <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>loadDefaultCAFile</span><span class="token punctuation">&gt;</span></span>true<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>loadDefaultCAFile</span><span class="token punctuation">&gt;</span></span>
+            <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>cacheSessions</span><span class="token punctuation">&gt;</span></span>true<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>cacheSessions</span><span class="token punctuation">&gt;</span></span>
+            <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>disableProtocols</span><span class="token punctuation">&gt;</span></span>sslv2,sslv3<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>disableProtocols</span><span class="token punctuation">&gt;</span></span>
+            <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>preferServerCiphers</span><span class="token punctuation">&gt;</span></span>true<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>preferServerCiphers</span><span class="token punctuation">&gt;</span></span>
+        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>server</span><span class="token punctuation">&gt;</span></span>
+
+        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>client</span><span class="token punctuation">&gt;</span></span> <span class="token comment">&lt;!-- Used for connecting to https dictionary source and secured Zookeeper communication --&gt;</span>
+            <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>loadDefaultCAFile</span><span class="token punctuation">&gt;</span></span>true<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>loadDefaultCAFile</span><span class="token punctuation">&gt;</span></span>
+            <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>cacheSessions</span><span class="token punctuation">&gt;</span></span>true<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>cacheSessions</span><span class="token punctuation">&gt;</span></span>
+            <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>disableProtocols</span><span class="token punctuation">&gt;</span></span>sslv2,sslv3<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>disableProtocols</span><span class="token punctuation">&gt;</span></span>
+            <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>preferServerCiphers</span><span class="token punctuation">&gt;</span></span>true<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>preferServerCiphers</span><span class="token punctuation">&gt;</span></span>
+            <span class="token comment">&lt;!-- Use for self-signed: &lt;verificationMode&gt;none&lt;/verificationMode&gt; --&gt;</span>
+            <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>invalidCertificateHandler</span><span class="token punctuation">&gt;</span></span>
+                <span class="token comment">&lt;!-- Use for self-signed: &lt;name&gt;AcceptCertificateHandler&lt;/name&gt; --&gt;</span>
+                <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>name</span><span class="token punctuation">&gt;</span></span>RejectCertificateHandler<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>name</span><span class="token punctuation">&gt;</span></span>
+            <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>invalidCertificateHandler</span><span class="token punctuation">&gt;</span></span>
+        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>client</span><span class="token punctuation">&gt;</span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>openSSL</span><span class="token punctuation">&gt;</span></span>
+
+    <span class="token comment">&lt;!-- Default root page on http[s] server. For example load UI from https://tabix.io/ when opening http://localhost:8123 --&gt;</span>
+    <span class="token comment">&lt;!--
+    &lt;http_server_default_response&gt;&lt;![CDATA[&lt;html ng-app=&quot;SMI2&quot;&gt;&lt;head&gt;&lt;base href=&quot;http://ui.tabix.io/&quot;&gt;&lt;/head&gt;&lt;body&gt;&lt;div ui-view=&quot;&quot; class=&quot;content-ui&quot;&gt;&lt;/div&gt;&lt;script src=&quot;http://loader.tabix.io/master.js&quot;&gt;&lt;/script&gt;&lt;/body&gt;&lt;/html&gt;]]&gt;&lt;/http_server_default_response&gt;
+    --&gt;</span>
+
+    <span class="token comment">&lt;!-- Maximum number of concurrent queries. --&gt;</span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>max_concurrent_queries</span><span class="token punctuation">&gt;</span></span>1000<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>max_concurrent_queries</span><span class="token punctuation">&gt;</span></span>
+
+    <span class="token comment">&lt;!-- Maximum memory usage (resident set size) for server process.
+         Zero value or unset means default. Default is &quot;max_server_memory_usage_to_ram_ratio&quot; of available physical RAM.
+         If the value is larger than &quot;max_server_memory_usage_to_ram_ratio&quot; of available physical RAM, it will be cut down.
+
+         The constraint is checked on query execution time.
+         If a query tries to allocate memory and the current memory usage plus allocation is greater
+          than specified threshold, exception will be thrown.
+
+         It is not practical to set this constraint to small values like just a few gigabytes,
+          because memory allocator will keep this amount of memory in caches and the server will deny service of queries.
+      --&gt;</span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>max_server_memory_usage</span><span class="token punctuation">&gt;</span></span>0<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>max_server_memory_usage</span><span class="token punctuation">&gt;</span></span>
+
+    <span class="token comment">&lt;!-- Maximum number of threads in the Global thread pool.
+    This will default to a maximum of 10000 threads if not specified.
+    This setting will be useful in scenarios where there are a large number
+    of distributed queries that are running concurrently but are idling most
+    of the time, in which case a higher number of threads might be required.
+    --&gt;</span>
+
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>max_thread_pool_size</span><span class="token punctuation">&gt;</span></span>10000<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>max_thread_pool_size</span><span class="token punctuation">&gt;</span></span>
+
+    <span class="token comment">&lt;!-- On memory constrained environments you may have to set this to value larger than 1.
+      --&gt;</span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>max_server_memory_usage_to_ram_ratio</span><span class="token punctuation">&gt;</span></span>0.9<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>max_server_memory_usage_to_ram_ratio</span><span class="token punctuation">&gt;</span></span>
+
+    <span class="token comment">&lt;!-- Simple server-wide memory profiler. Collect a stack trace at every peak allocation step (in bytes).
+         Data will be stored in system.trace_log table with query_id = empty string.
+         Zero means disabled.
+      --&gt;</span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>total_memory_profiler_step</span><span class="token punctuation">&gt;</span></span>4194304<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>total_memory_profiler_step</span><span class="token punctuation">&gt;</span></span>
+
+    <span class="token comment">&lt;!-- Collect random allocations and deallocations and write them into system.trace_log with 'MemorySample' trace_type.
+         The probability is for every alloc/free regardless to the size of the allocation.
+         Note that sampling happens only when the amount of untracked memory exceeds the untracked memory limit,
+          which is 4 MiB by default but can be lowered if 'total_memory_profiler_step' is lowered.
+         You may want to set 'total_memory_profiler_step' to 1 for extra fine grained sampling.
+      --&gt;</span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>total_memory_tracker_sample_probability</span><span class="token punctuation">&gt;</span></span>0<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>total_memory_tracker_sample_probability</span><span class="token punctuation">&gt;</span></span>
+
+    <span class="token comment">&lt;!-- Set limit on number of open files (default: maximum). This setting makes sense on Mac OS X because getrlimit() fails to retrieve
+         correct maximum value. --&gt;</span>
+    <span class="token comment">&lt;!-- &lt;max_open_files&gt;262144&lt;/max_open_files&gt; --&gt;</span>
+
+    <span class="token comment">&lt;!-- Size of cache of uncompressed blocks of data, used in tables of MergeTree family.
+         In bytes. Cache is single for server. Memory is allocated only on demand.
+         Cache is used when 'use_uncompressed_cache' user setting turned on (off by default).
+         Uncompressed cache is advantageous only for very short queries and in rare cases.
+
+         Note: uncompressed cache can be pointless for lz4, because memory bandwidth
+         is slower than multi-core decompression on some server configurations.
+         Enabling it can sometimes paradoxically make queries slower.
+      --&gt;</span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>uncompressed_cache_size</span><span class="token punctuation">&gt;</span></span>8589934592<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>uncompressed_cache_size</span><span class="token punctuation">&gt;</span></span>
+
+    <span class="token comment">&lt;!-- Approximate size of mark cache, used in tables of MergeTree family.
+         In bytes. Cache is single for server. Memory is allocated only on demand.
+         You should not lower this value.
+      --&gt;</span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>mark_cache_size</span><span class="token punctuation">&gt;</span></span>5368709120<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>mark_cache_size</span><span class="token punctuation">&gt;</span></span>
+
+
+    <span class="token comment">&lt;!-- If you enable the `min_bytes_to_use_mmap_io` setting,
+         the data in MergeTree tables can be read with mmap to avoid copying from kernel to userspace.
+         It makes sense only for large files and helps only if data reside in page cache.
+         To avoid frequent open/mmap/munmap/close calls (which are very expensive due to consequent page faults)
+         and to reuse mappings from several threads and queries,
+         the cache of mapped files is maintained. Its size is the number of mapped regions (usually equal to the number of mapped files).
+         The amount of data in mapped files can be monitored
+         in system.metrics, system.metric_log by the MMappedFiles, MMappedFileBytes metrics
+         and in system.asynchronous_metrics, system.asynchronous_metrics_log by the MMapCacheCells metric,
+         and also in system.events, system.processes, system.query_log, system.query_thread_log by the
+         CreatedReadBufferMMap, CreatedReadBufferMMapFailed, MMappedFileCacheHits, MMappedFileCacheMisses events.
+         Note that the amount of data in mapped files does not consume memory directly and is not accounted
+         in query or server memory usage - because this memory can be discarded similar to OS page cache.
+         The cache is dropped (the files are closed) automatically on removal of old parts in MergeTree,
+         also it can be dropped manually by the SYSTEM DROP MMAP CACHE query.
+      --&gt;</span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>mmap_cache_size</span><span class="token punctuation">&gt;</span></span>1000<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>mmap_cache_size</span><span class="token punctuation">&gt;</span></span>
+
+
+    <span class="token comment">&lt;!-- Path to data directory, with trailing slash. --&gt;</span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>path</span><span class="token punctuation">&gt;</span></span>/var/lib/clickhouse/<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>path</span><span class="token punctuation">&gt;</span></span>
+
+    <span class="token comment">&lt;!-- Path to temporary data for processing hard queries. --&gt;</span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>tmp_path</span><span class="token punctuation">&gt;</span></span>/var/lib/clickhouse/tmp/<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>tmp_path</span><span class="token punctuation">&gt;</span></span>
+
+    <span class="token comment">&lt;!-- Policy from the &lt;storage_configuration&gt; for the temporary files.
+         If not set &lt;tmp_path&gt; is used, otherwise &lt;tmp_path&gt; is ignored.
+
+         Notes:
+         - move_factor              is ignored
+         - keep_free_space_bytes    is ignored
+         - max_data_part_size_bytes is ignored
+         - you must have exactly one volume in that policy
+    --&gt;</span>
+    <span class="token comment">&lt;!-- &lt;tmp_policy&gt;tmp&lt;/tmp_policy&gt; --&gt;</span>
+
+    <span class="token comment">&lt;!-- Directory with user provided files that are accessible by 'file' table function. --&gt;</span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>user_files_path</span><span class="token punctuation">&gt;</span></span>/var/lib/clickhouse/user_files/<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>user_files_path</span><span class="token punctuation">&gt;</span></span>
+
+    <span class="token comment">&lt;!-- LDAP server definitions. --&gt;</span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>ldap_servers</span><span class="token punctuation">&gt;</span></span>
+        <span class="token comment">&lt;!-- List LDAP servers with their connection parameters here to later 1) use them as authenticators for dedicated local users,
+              who have 'ldap' authentication mechanism specified instead of 'password', or to 2) use them as remote user directories.
+             Parameters:
+                host - LDAP server hostname or IP, this parameter is mandatory and cannot be empty.
+                port - LDAP server port, default is 636 if enable_tls is set to true, 389 otherwise.
+                bind_dn - template used to construct the DN to bind to.
+                        The resulting DN will be constructed by replacing all '{user_name}' substrings of the template with the actual
+                         user name during each authentication attempt.
+                verification_cooldown - a period of time, in seconds, after a successful bind attempt, during which a user will be assumed
+                         to be successfully authenticated for all consecutive requests without contacting the LDAP server.
+                        Specify 0 (the default) to disable caching and force contacting the LDAP server for each authentication request.
+                enable_tls - flag to trigger use of secure connection to the LDAP server.
+                        Specify 'no' for plain text (ldap://) protocol (not recommended).
+                        Specify 'yes' for LDAP over SSL/TLS (ldaps://) protocol (recommended, the default).
+                        Specify 'starttls' for legacy StartTLS protocol (plain text (ldap://) protocol, upgraded to TLS).
+                tls_minimum_protocol_version - the minimum protocol version of SSL/TLS.
+                        Accepted values are: 'ssl2', 'ssl3', 'tls1.0', 'tls1.1', 'tls1.2' (the default).
+                tls_require_cert - SSL/TLS peer certificate verification behavior.
+                        Accepted values are: 'never', 'allow', 'try', 'demand' (the default).
+                tls_cert_file - path to certificate file.
+                tls_key_file - path to certificate key file.
+                tls_ca_cert_file - path to CA certificate file.
+                tls_ca_cert_dir - path to the directory containing CA certificates.
+                tls_cipher_suite - allowed cipher suite (in OpenSSL notation).
+             Example:
+                &lt;my_ldap_server&gt;
+                    &lt;host&gt;localhost&lt;/host&gt;
+                    &lt;port&gt;636&lt;/port&gt;
+                    &lt;bind_dn&gt;uid={user_name},ou=users,dc=example,dc=com&lt;/bind_dn&gt;
+                    &lt;verification_cooldown&gt;300&lt;/verification_cooldown&gt;
+                    &lt;enable_tls&gt;yes&lt;/enable_tls&gt;
+                    &lt;tls_minimum_protocol_version&gt;tls1.2&lt;/tls_minimum_protocol_version&gt;
+                    &lt;tls_require_cert&gt;demand&lt;/tls_require_cert&gt;
+                    &lt;tls_cert_file&gt;/path/to/tls_cert_file&lt;/tls_cert_file&gt;
+                    &lt;tls_key_file&gt;/path/to/tls_key_file&lt;/tls_key_file&gt;
+                    &lt;tls_ca_cert_file&gt;/path/to/tls_ca_cert_file&lt;/tls_ca_cert_file&gt;
+                    &lt;tls_ca_cert_dir&gt;/path/to/tls_ca_cert_dir&lt;/tls_ca_cert_dir&gt;
+                    &lt;tls_cipher_suite&gt;ECDHE-ECDSA-AES256-GCM-SHA384:ECDHE-RSA-AES256-GCM-SHA384:AES256-GCM-SHA384&lt;/tls_cipher_suite&gt;
+                &lt;/my_ldap_server&gt;
+        --&gt;</span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>ldap_servers</span><span class="token punctuation">&gt;</span></span>
+
+    <span class="token comment">&lt;!-- To enable Kerberos authentication support for HTTP requests (GSS-SPNEGO), for those users who are explicitly configured
+          to authenticate via Kerberos, define a single 'kerberos' section here.
+         Parameters:
+            principal - canonical service principal name, that will be acquired and used when accepting security contexts.
+                    This parameter is optional, if omitted, the default principal will be used.
+                    This parameter cannot be specified together with 'realm' parameter.
+            realm - a realm, that will be used to restrict authentication to only those requests whose initiator's realm matches it.
+                    This parameter is optional, if omitted, no additional filtering by realm will be applied.
+                    This parameter cannot be specified together with 'principal' parameter.
+         Example:
+            &lt;kerberos /&gt;
+         Example:
+            &lt;kerberos&gt;
+                &lt;principal&gt;HTTP/clickhouse.example.com@EXAMPLE.COM&lt;/principal&gt;
+            &lt;/kerberos&gt;
+         Example:
+            &lt;kerberos&gt;
+                &lt;realm&gt;EXAMPLE.COM&lt;/realm&gt;
+            &lt;/kerberos&gt;
+    --&gt;</span>
+
+    <span class="token comment">&lt;!-- Sources to read users, roles, access rights, profiles of settings, quotas. --&gt;</span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>user_directories</span><span class="token punctuation">&gt;</span></span>
+        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>users_xml</span><span class="token punctuation">&gt;</span></span>
+            <span class="token comment">&lt;!-- Path to configuration file with predefined users. --&gt;</span>
+            <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>path</span><span class="token punctuation">&gt;</span></span>users.xml<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>path</span><span class="token punctuation">&gt;</span></span>
+        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>users_xml</span><span class="token punctuation">&gt;</span></span>
+        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>local_directory</span><span class="token punctuation">&gt;</span></span>
+            <span class="token comment">&lt;!-- Path to folder where users created by SQL commands are stored. --&gt;</span>
+            <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>path</span><span class="token punctuation">&gt;</span></span>/var/lib/clickhouse/access/<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>path</span><span class="token punctuation">&gt;</span></span>
+        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>local_directory</span><span class="token punctuation">&gt;</span></span>
+
+        <span class="token comment">&lt;!-- To add an LDAP server as a remote user directory of users that are not defined locally, define a single 'ldap' section
+              with the following parameters:
+                server - one of LDAP server names defined in 'ldap_servers' config section above.
+                        This parameter is mandatory and cannot be empty.
+                roles - section with a list of locally defined roles that will be assigned to each user retrieved from the LDAP server.
+                        If no roles are specified here or assigned during role mapping (below), user will not be able to perform any
+                         actions after authentication.
+                role_mapping - section with LDAP search parameters and mapping rules.
+                        When a user authenticates, while still bound to LDAP, an LDAP search is performed using search_filter and the
+                         name of the logged in user. For each entry found during that search, the value of the specified attribute is
+                         extracted. For each attribute value that has the specified prefix, the prefix is removed, and the rest of the
+                         value becomes the name of a local role defined in ClickHouse, which is expected to be created beforehand by
+                         CREATE ROLE command.
+                        There can be multiple 'role_mapping' sections defined inside the same 'ldap' section. All of them will be
+                         applied.
+                    base_dn - template used to construct the base DN for the LDAP search.
+                            The resulting DN will be constructed by replacing all '{user_name}' and '{bind_dn}' substrings
+                             of the template with the actual user name and bind DN during each LDAP search.
+                    scope - scope of the LDAP search.
+                            Accepted values are: 'base', 'one_level', 'children', 'subtree' (the default).
+                    search_filter - template used to construct the search filter for the LDAP search.
+                            The resulting filter will be constructed by replacing all '{user_name}', '{bind_dn}', and '{base_dn}'
+                             substrings of the template with the actual user name, bind DN, and base DN during each LDAP search.
+                            Note, that the special characters must be escaped properly in XML.
+                    attribute - attribute name whose values will be returned by the LDAP search.
+                    prefix - prefix, that will be expected to be in front of each string in the original list of strings returned by
+                             the LDAP search. Prefix will be removed from the original strings and resulting strings will be treated
+                             as local role names. Empty, by default.
+             Example:
+                &lt;ldap&gt;
+                    &lt;server&gt;my_ldap_server&lt;/server&gt;
+                    &lt;roles&gt;
+                        &lt;my_local_role1 /&gt;
+                        &lt;my_local_role2 /&gt;
+                    &lt;/roles&gt;
+                    &lt;role_mapping&gt;
+                        &lt;base_dn&gt;ou=groups,dc=example,dc=com&lt;/base_dn&gt;
+                        &lt;scope&gt;subtree&lt;/scope&gt;
+                        &lt;search_filter&gt;(&amp;amp;(objectClass=groupOfNames)(member={bind_dn}))&lt;/search_filter&gt;
+                        &lt;attribute&gt;cn&lt;/attribute&gt;
+                        &lt;prefix&gt;clickhouse_&lt;/prefix&gt;
+                    &lt;/role_mapping&gt;
+                &lt;/ldap&gt;
+        --&gt;</span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>user_directories</span><span class="token punctuation">&gt;</span></span>
+
+    <span class="token comment">&lt;!-- Default profile of settings. --&gt;</span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>default_profile</span><span class="token punctuation">&gt;</span></span>default<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>default_profile</span><span class="token punctuation">&gt;</span></span>
+
+    <span class="token comment">&lt;!-- Comma-separated list of prefixes for user-defined settings. --&gt;</span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>custom_settings_prefixes</span><span class="token punctuation">&gt;</span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>custom_settings_prefixes</span><span class="token punctuation">&gt;</span></span>
+
+    <span class="token comment">&lt;!-- System profile of settings. This settings are used by internal processes (Distributed DDL worker and so on). --&gt;</span>
+    <span class="token comment">&lt;!-- &lt;system_profile&gt;default&lt;/system_profile&gt; --&gt;</span>
+
+    <span class="token comment">&lt;!-- Buffer profile of settings.
+         This settings are used by Buffer storage to flush data to the underlying table.
+         Default: used from system_profile directive.
+    --&gt;</span>
+    <span class="token comment">&lt;!-- &lt;buffer_profile&gt;default&lt;/buffer_profile&gt; --&gt;</span>
+
+    <span class="token comment">&lt;!-- Default database. --&gt;</span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>default_database</span><span class="token punctuation">&gt;</span></span>default<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>default_database</span><span class="token punctuation">&gt;</span></span>
+
+    <span class="token comment">&lt;!-- Server time zone could be set here.
+
+         Time zone is used when converting between String and DateTime types,
+          when printing DateTime in text formats and parsing DateTime from text,
+          it is used in date and time related functions, if specific time zone was not passed as an argument.
+
+         Time zone is specified as identifier from IANA time zone database, like UTC or Africa/Abidjan.
+         If not specified, system time zone at server startup is used.
+
+         Please note, that server could display time zone alias instead of specified name.
+         Example: W-SU is an alias for Europe/Moscow and Zulu is an alias for UTC.
+    --&gt;</span>
+    <span class="token comment">&lt;!-- &lt;timezone&gt;Europe/Moscow&lt;/timezone&gt; --&gt;</span>
+
+    <span class="token comment">&lt;!-- You can specify umask here (see &quot;man umask&quot;). Server will apply it on startup.
+         Number is always parsed as octal. Default umask is 027 (other users cannot read logs, data files, etc; group can only read).
+    --&gt;</span>
+    <span class="token comment">&lt;!-- &lt;umask&gt;022&lt;/umask&gt; --&gt;</span>
+
+    <span class="token comment">&lt;!-- Perform mlockall after startup to lower first queries latency
+          and to prevent clickhouse executable from being paged out under high IO load.
+         Enabling this option is recommended but will lead to increased startup time for up to a few seconds.
+    --&gt;</span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>mlock_executable</span><span class="token punctuation">&gt;</span></span>true<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>mlock_executable</span><span class="token punctuation">&gt;</span></span>
+
+    <span class="token comment">&lt;!-- Reallocate memory for machine code (&quot;text&quot;) using huge pages. Highly experimental. --&gt;</span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>remap_executable</span><span class="token punctuation">&gt;</span></span>false<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>remap_executable</span><span class="token punctuation">&gt;</span></span>
+
+    <span class="token comment">&lt;!-- Configuration of clusters that could be used in Distributed tables.
+         https://clickhouse.tech/docs/en/operations/table_engines/distributed/
+      --&gt;</span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>remote_servers</span><span class="token punctuation">&gt;</span></span>
+        <span class="token comment">&lt;!-- Test only shard config for testing distributed storage --&gt;</span>
+        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>test_shard_localhost</span><span class="token punctuation">&gt;</span></span>
+            <span class="token comment">&lt;!-- Inter-server per-cluster secret for Distributed queries
+                 default: no secret (no authentication will be performed)
+
+                 If set, then Distributed queries will be validated on shards, so at least:
+                 - such cluster should exist on the shard,
+                 - such cluster should have the same secret.
+
+                 And also (and which is more important), the initial_user will
+                 be used as current user for the query.
+
+                 Right now the protocol is pretty simple and it only takes into account:
+                 - cluster name
+                 - query
+
+                 Also it will be nice if the following will be implemented:
+                 - source hostname (see interserver_http_host), but then it will depends from DNS,
+                   it can use IP address instead, but then the you need to get correct on the initiator node.
+                 - target hostname / ip address (same notes as for source hostname)
+                 - time-based security tokens
+            --&gt;</span>
+            <span class="token comment">&lt;!-- &lt;secret&gt;&lt;/secret&gt; --&gt;</span>
+
+            <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>shard</span><span class="token punctuation">&gt;</span></span>
+                <span class="token comment">&lt;!-- Optional. Whether to write data to just one of the replicas. Default: false (write data to all replicas). --&gt;</span>
+                <span class="token comment">&lt;!-- &lt;internal_replication&gt;false&lt;/internal_replication&gt; --&gt;</span>
+                <span class="token comment">&lt;!-- Optional. Shard weight when writing data. Default: 1. --&gt;</span>
+                <span class="token comment">&lt;!-- &lt;weight&gt;1&lt;/weight&gt; --&gt;</span>
+                <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>replica</span><span class="token punctuation">&gt;</span></span>
+                    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>host</span><span class="token punctuation">&gt;</span></span>localhost<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>host</span><span class="token punctuation">&gt;</span></span>
+                    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>port</span><span class="token punctuation">&gt;</span></span>9000<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>port</span><span class="token punctuation">&gt;</span></span>
+                    <span class="token comment">&lt;!-- Optional. Priority of the replica for load_balancing. Default: 1 (less value has more priority). --&gt;</span>
+                    <span class="token comment">&lt;!-- &lt;priority&gt;1&lt;/priority&gt; --&gt;</span>
+                <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>replica</span><span class="token punctuation">&gt;</span></span>
+            <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>shard</span><span class="token punctuation">&gt;</span></span>
+        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>test_shard_localhost</span><span class="token punctuation">&gt;</span></span>
+        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>test_cluster_two_shards_localhost</span><span class="token punctuation">&gt;</span></span>
+             <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>shard</span><span class="token punctuation">&gt;</span></span>
+                 <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>replica</span><span class="token punctuation">&gt;</span></span>
+                     <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>host</span><span class="token punctuation">&gt;</span></span>localhost<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>host</span><span class="token punctuation">&gt;</span></span>
+                     <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>port</span><span class="token punctuation">&gt;</span></span>9000<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>port</span><span class="token punctuation">&gt;</span></span>
+                 <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>replica</span><span class="token punctuation">&gt;</span></span>
+             <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>shard</span><span class="token punctuation">&gt;</span></span>
+             <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>shard</span><span class="token punctuation">&gt;</span></span>
+                 <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>replica</span><span class="token punctuation">&gt;</span></span>
+                     <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>host</span><span class="token punctuation">&gt;</span></span>localhost<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>host</span><span class="token punctuation">&gt;</span></span>
+                     <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>port</span><span class="token punctuation">&gt;</span></span>9000<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>port</span><span class="token punctuation">&gt;</span></span>
+                 <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>replica</span><span class="token punctuation">&gt;</span></span>
+             <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>shard</span><span class="token punctuation">&gt;</span></span>
+        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>test_cluster_two_shards_localhost</span><span class="token punctuation">&gt;</span></span>
+        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>test_cluster_two_shards</span><span class="token punctuation">&gt;</span></span>
+            <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>shard</span><span class="token punctuation">&gt;</span></span>
+                <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>replica</span><span class="token punctuation">&gt;</span></span>
+                    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>host</span><span class="token punctuation">&gt;</span></span>127.0.0.1<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>host</span><span class="token punctuation">&gt;</span></span>
+                    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>port</span><span class="token punctuation">&gt;</span></span>9000<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>port</span><span class="token punctuation">&gt;</span></span>
+                <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>replica</span><span class="token punctuation">&gt;</span></span>
+            <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>shard</span><span class="token punctuation">&gt;</span></span>
+            <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>shard</span><span class="token punctuation">&gt;</span></span>
+                <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>replica</span><span class="token punctuation">&gt;</span></span>
+                    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>host</span><span class="token punctuation">&gt;</span></span>127.0.0.2<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>host</span><span class="token punctuation">&gt;</span></span>
+                    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>port</span><span class="token punctuation">&gt;</span></span>9000<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>port</span><span class="token punctuation">&gt;</span></span>
+                <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>replica</span><span class="token punctuation">&gt;</span></span>
+            <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>shard</span><span class="token punctuation">&gt;</span></span>
+        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>test_cluster_two_shards</span><span class="token punctuation">&gt;</span></span>
+        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>test_cluster_two_shards_internal_replication</span><span class="token punctuation">&gt;</span></span>
+            <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>shard</span><span class="token punctuation">&gt;</span></span>
+                <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>internal_replication</span><span class="token punctuation">&gt;</span></span>true<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>internal_replication</span><span class="token punctuation">&gt;</span></span>
+                <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>replica</span><span class="token punctuation">&gt;</span></span>
+                    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>host</span><span class="token punctuation">&gt;</span></span>127.0.0.1<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>host</span><span class="token punctuation">&gt;</span></span>
+                    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>port</span><span class="token punctuation">&gt;</span></span>9000<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>port</span><span class="token punctuation">&gt;</span></span>
+                <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>replica</span><span class="token punctuation">&gt;</span></span>
+            <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>shard</span><span class="token punctuation">&gt;</span></span>
+            <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>shard</span><span class="token punctuation">&gt;</span></span>
+                <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>internal_replication</span><span class="token punctuation">&gt;</span></span>true<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>internal_replication</span><span class="token punctuation">&gt;</span></span>
+                <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>replica</span><span class="token punctuation">&gt;</span></span>
+                    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>host</span><span class="token punctuation">&gt;</span></span>127.0.0.2<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>host</span><span class="token punctuation">&gt;</span></span>
+                    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>port</span><span class="token punctuation">&gt;</span></span>9000<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>port</span><span class="token punctuation">&gt;</span></span>
+                <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>replica</span><span class="token punctuation">&gt;</span></span>
+            <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>shard</span><span class="token punctuation">&gt;</span></span>
+        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>test_cluster_two_shards_internal_replication</span><span class="token punctuation">&gt;</span></span>
+        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>test_shard_localhost_secure</span><span class="token punctuation">&gt;</span></span>
+            <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>shard</span><span class="token punctuation">&gt;</span></span>
+                <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>replica</span><span class="token punctuation">&gt;</span></span>
+                    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>host</span><span class="token punctuation">&gt;</span></span>localhost<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>host</span><span class="token punctuation">&gt;</span></span>
+                    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>port</span><span class="token punctuation">&gt;</span></span>9440<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>port</span><span class="token punctuation">&gt;</span></span>
+                    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>secure</span><span class="token punctuation">&gt;</span></span>1<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>secure</span><span class="token punctuation">&gt;</span></span>
+                <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>replica</span><span class="token punctuation">&gt;</span></span>
+            <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>shard</span><span class="token punctuation">&gt;</span></span>
+        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>test_shard_localhost_secure</span><span class="token punctuation">&gt;</span></span>
+        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>test_unavailable_shard</span><span class="token punctuation">&gt;</span></span>
+            <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>shard</span><span class="token punctuation">&gt;</span></span>
+                <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>replica</span><span class="token punctuation">&gt;</span></span>
+                    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>host</span><span class="token punctuation">&gt;</span></span>localhost<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>host</span><span class="token punctuation">&gt;</span></span>
+                    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>port</span><span class="token punctuation">&gt;</span></span>9000<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>port</span><span class="token punctuation">&gt;</span></span>
+                <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>replica</span><span class="token punctuation">&gt;</span></span>
+            <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>shard</span><span class="token punctuation">&gt;</span></span>
+            <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>shard</span><span class="token punctuation">&gt;</span></span>
+                <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>replica</span><span class="token punctuation">&gt;</span></span>
+                    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>host</span><span class="token punctuation">&gt;</span></span>localhost<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>host</span><span class="token punctuation">&gt;</span></span>
+                    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>port</span><span class="token punctuation">&gt;</span></span>1<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>port</span><span class="token punctuation">&gt;</span></span>
+                <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>replica</span><span class="token punctuation">&gt;</span></span>
+            <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>shard</span><span class="token punctuation">&gt;</span></span>
+        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>test_unavailable_shard</span><span class="token punctuation">&gt;</span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>remote_servers</span><span class="token punctuation">&gt;</span></span>
+
+    <span class="token comment">&lt;!-- The list of hosts allowed to use in URL-related storage engines and table functions.
+        If this section is not present in configuration, all hosts are allowed.
+    --&gt;</span>
+    <span class="token comment">&lt;!--&lt;remote_url_allow_hosts&gt;--&gt;</span>
+        <span class="token comment">&lt;!-- Host should be specified exactly as in URL. The name is checked before DNS resolution.
+            Example: &quot;yandex.ru&quot;, &quot;yandex.ru.&quot; and &quot;www.yandex.ru&quot; are different hosts.
+                    If port is explicitly specified in URL, the host:port is checked as a whole.
+                    If host specified here without port, any port with this host allowed.
+                    &quot;yandex.ru&quot; -&gt; &quot;yandex.ru:443&quot;, &quot;yandex.ru:80&quot; etc. is allowed, but &quot;yandex.ru:80&quot; -&gt; only &quot;yandex.ru:80&quot; is allowed.
+            If the host is specified as IP address, it is checked as specified in URL. Example: &quot;[2a02:6b8:a::a]&quot;.
+            If there are redirects and support for redirects is enabled, every redirect (the Location field) is checked.
+        --&gt;</span>
+
+        <span class="token comment">&lt;!-- Regular expression can be specified. RE2 engine is used for regexps.
+            Regexps are not aligned: don't forget to add ^ and $. Also don't forget to escape dot (.) metacharacter
+            (forgetting to do so is a common source of error).
+        --&gt;</span>
+    <span class="token comment">&lt;!--&lt;/remote_url_allow_hosts&gt;--&gt;</span>
+
+    <span class="token comment">&lt;!-- If element has 'incl' attribute, then for it's value will be used corresponding substitution from another file.
+         By default, path to file with substitutions is /etc/metrika.xml. It could be changed in config in 'include_from' element.
+         Values for substitutions are specified in /yandex/name_of_substitution elements in that file.
+      --&gt;</span>
+
+    <span class="token comment">&lt;!-- ZooKeeper is used to store metadata about replicas, when using Replicated tables.
+         Optional. If you don't use replicated tables, you could omit that.
+
+         See https://clickhouse.tech/docs/en/engines/table-engines/mergetree-family/replication/
+      --&gt;</span>
+
+    <span class="token comment">&lt;!--
+    &lt;zookeeper&gt;
+        &lt;node&gt;
+            &lt;host&gt;example1&lt;/host&gt;
+            &lt;port&gt;2181&lt;/port&gt;
+        &lt;/node&gt;
+        &lt;node&gt;
+            &lt;host&gt;example2&lt;/host&gt;
+            &lt;port&gt;2181&lt;/port&gt;
+        &lt;/node&gt;
+        &lt;node&gt;
+            &lt;host&gt;example3&lt;/host&gt;
+            &lt;port&gt;2181&lt;/port&gt;
+        &lt;/node&gt;
+    &lt;/zookeeper&gt;
+    --&gt;</span>
+
+    <span class="token comment">&lt;!-- Substitutions for parameters of replicated tables.
+          Optional. If you don't use replicated tables, you could omit that.
+
+         See https://clickhouse.tech/docs/en/engines/table-engines/mergetree-family/replication/#creating-replicated-tables
+      --&gt;</span>
+    <span class="token comment">&lt;!--
+    &lt;macros&gt;
+        &lt;shard&gt;01&lt;/shard&gt;
+        &lt;replica&gt;example01-01-1&lt;/replica&gt;
+    &lt;/macros&gt;
+    --&gt;</span>
+
+
+    <span class="token comment">&lt;!-- Reloading interval for embedded dictionaries, in seconds. Default: 3600. --&gt;</span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>builtin_dictionaries_reload_interval</span><span class="token punctuation">&gt;</span></span>3600<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>builtin_dictionaries_reload_interval</span><span class="token punctuation">&gt;</span></span>
+
+
+    <span class="token comment">&lt;!-- Maximum session timeout, in seconds. Default: 3600. --&gt;</span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>max_session_timeout</span><span class="token punctuation">&gt;</span></span>3600<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>max_session_timeout</span><span class="token punctuation">&gt;</span></span>
+
+    <span class="token comment">&lt;!-- Default session timeout, in seconds. Default: 60. --&gt;</span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>default_session_timeout</span><span class="token punctuation">&gt;</span></span>60<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>default_session_timeout</span><span class="token punctuation">&gt;</span></span>
+
+    <span class="token comment">&lt;!-- Sending data to Graphite for monitoring. Several sections can be defined. --&gt;</span>
+    <span class="token comment">&lt;!--
+        interval - send every X second
+        root_path - prefix for keys
+        hostname_in_path - append hostname to root_path (default = true)
+        metrics - send data from table system.metrics
+        events - send data from table system.events
+        asynchronous_metrics - send data from table system.asynchronous_metrics
+    --&gt;</span>
+    <span class="token comment">&lt;!--
+    &lt;graphite&gt;
+        &lt;host&gt;localhost&lt;/host&gt;
+        &lt;port&gt;42000&lt;/port&gt;
+        &lt;timeout&gt;0.1&lt;/timeout&gt;
+        &lt;interval&gt;60&lt;/interval&gt;
+        &lt;root_path&gt;one_min&lt;/root_path&gt;
+        &lt;hostname_in_path&gt;true&lt;/hostname_in_path&gt;
+
+        &lt;metrics&gt;true&lt;/metrics&gt;
+        &lt;events&gt;true&lt;/events&gt;
+        &lt;events_cumulative&gt;false&lt;/events_cumulative&gt;
+        &lt;asynchronous_metrics&gt;true&lt;/asynchronous_metrics&gt;
+    &lt;/graphite&gt;
+    &lt;graphite&gt;
+        &lt;host&gt;localhost&lt;/host&gt;
+        &lt;port&gt;42000&lt;/port&gt;
+        &lt;timeout&gt;0.1&lt;/timeout&gt;
+        &lt;interval&gt;1&lt;/interval&gt;
+        &lt;root_path&gt;one_sec&lt;/root_path&gt;
+
+        &lt;metrics&gt;true&lt;/metrics&gt;
+        &lt;events&gt;true&lt;/events&gt;
+        &lt;events_cumulative&gt;false&lt;/events_cumulative&gt;
+        &lt;asynchronous_metrics&gt;false&lt;/asynchronous_metrics&gt;
+    &lt;/graphite&gt;
+    --&gt;</span>
+
+    <span class="token comment">&lt;!-- Serve endpoint for Prometheus monitoring. --&gt;</span>
+    <span class="token comment">&lt;!--
+        endpoint - mertics path (relative to root, statring with &quot;/&quot;)
+        port - port to setup server. If not defined or 0 than http_port used
+        metrics - send data from table system.metrics
+        events - send data from table system.events
+        asynchronous_metrics - send data from table system.asynchronous_metrics
+        status_info - send data from different component from CH, ex: Dictionaries status
+    --&gt;</span>
+    <span class="token comment">&lt;!--
+    &lt;prometheus&gt;
+        &lt;endpoint&gt;/metrics&lt;/endpoint&gt;
+        &lt;port&gt;9363&lt;/port&gt;
+
+        &lt;metrics&gt;true&lt;/metrics&gt;
+        &lt;events&gt;true&lt;/events&gt;
+        &lt;asynchronous_metrics&gt;true&lt;/asynchronous_metrics&gt;
+        &lt;status_info&gt;true&lt;/status_info&gt;
+    &lt;/prometheus&gt;
+    --&gt;</span>
+
+    <span class="token comment">&lt;!-- Query log. Used only for queries with setting log_queries = 1. --&gt;</span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>query_log</span><span class="token punctuation">&gt;</span></span>
+        <span class="token comment">&lt;!-- What table to insert data. If table is not exist, it will be created.
+             When query log structure is changed after system update,
+              then old table will be renamed and new table will be created automatically.
+        --&gt;</span>
+        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>database</span><span class="token punctuation">&gt;</span></span>system<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>database</span><span class="token punctuation">&gt;</span></span>
+        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>table</span><span class="token punctuation">&gt;</span></span>query_log<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>table</span><span class="token punctuation">&gt;</span></span>
+        <span class="token comment">&lt;!--
+            PARTITION BY expr: https://clickhouse.yandex/docs/en/table_engines/mergetree-family/custom_partitioning_key/
+            Example:
+                event_date
+                toMonday(event_date)
+                toYYYYMM(event_date)
+                toStartOfHour(event_time)
+        --&gt;</span>
+        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>partition_by</span><span class="token punctuation">&gt;</span></span>toYYYYMM(event_date)<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>partition_by</span><span class="token punctuation">&gt;</span></span>
+        <span class="token comment">&lt;!--
+            Table TTL specification: https://clickhouse.tech/docs/en/engines/table-engines/mergetree-family/mergetree/#mergetree-table-ttl
+            Example:
+                event_date + INTERVAL 1 WEEK
+                event_date + INTERVAL 7 DAY DELETE
+                event_date + INTERVAL 2 WEEK TO DISK 'bbb'
+
+        &lt;ttl&gt;event_date + INTERVAL 30 DAY DELETE&lt;/ttl&gt;
+        --&gt;</span>
+
+        <span class="token comment">&lt;!-- Instead of partition_by, you can provide full engine expression (starting with ENGINE = ) with parameters,
+             Example: &lt;engine&gt;ENGINE = MergeTree PARTITION BY toYYYYMM(event_date) ORDER BY (event_date, event_time) SETTINGS index_granularity = 1024&lt;/engine&gt;
+          --&gt;</span>
+
+        <span class="token comment">&lt;!-- Interval of flushing data. --&gt;</span>
+        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>flush_interval_milliseconds</span><span class="token punctuation">&gt;</span></span>7500<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>flush_interval_milliseconds</span><span class="token punctuation">&gt;</span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>query_log</span><span class="token punctuation">&gt;</span></span>
+
+    <span class="token comment">&lt;!-- Trace log. Stores stack traces collected by query profilers.
+         See query_profiler_real_time_period_ns and query_profiler_cpu_time_period_ns settings. --&gt;</span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>trace_log</span><span class="token punctuation">&gt;</span></span>
+        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>database</span><span class="token punctuation">&gt;</span></span>system<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>database</span><span class="token punctuation">&gt;</span></span>
+        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>table</span><span class="token punctuation">&gt;</span></span>trace_log<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>table</span><span class="token punctuation">&gt;</span></span>
+
+        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>partition_by</span><span class="token punctuation">&gt;</span></span>toYYYYMM(event_date)<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>partition_by</span><span class="token punctuation">&gt;</span></span>
+        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>flush_interval_milliseconds</span><span class="token punctuation">&gt;</span></span>7500<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>flush_interval_milliseconds</span><span class="token punctuation">&gt;</span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>trace_log</span><span class="token punctuation">&gt;</span></span>
+
+    <span class="token comment">&lt;!-- Query thread log. Has information about all threads participated in query execution.
+         Used only for queries with setting log_query_threads = 1. --&gt;</span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>query_thread_log</span><span class="token punctuation">&gt;</span></span>
+        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>database</span><span class="token punctuation">&gt;</span></span>system<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>database</span><span class="token punctuation">&gt;</span></span>
+        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>table</span><span class="token punctuation">&gt;</span></span>query_thread_log<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>table</span><span class="token punctuation">&gt;</span></span>
+        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>partition_by</span><span class="token punctuation">&gt;</span></span>toYYYYMM(event_date)<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>partition_by</span><span class="token punctuation">&gt;</span></span>
+        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>flush_interval_milliseconds</span><span class="token punctuation">&gt;</span></span>7500<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>flush_interval_milliseconds</span><span class="token punctuation">&gt;</span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>query_thread_log</span><span class="token punctuation">&gt;</span></span>
+
+    <span class="token comment">&lt;!-- Uncomment if use part log.
+         Part log contains information about all actions with parts in MergeTree tables (creation, deletion, merges, downloads).
+    &lt;part_log&gt;
+        &lt;database&gt;system&lt;/database&gt;
+        &lt;table&gt;part_log&lt;/table&gt;
+        &lt;flush_interval_milliseconds&gt;7500&lt;/flush_interval_milliseconds&gt;
+    &lt;/part_log&gt;
+    --&gt;</span>
+
+    <span class="token comment">&lt;!-- Uncomment to write text log into table.
+         Text log contains all information from usual server log but stores it in structured and efficient way.
+         The level of the messages that goes to the table can be limited (&lt;level&gt;), if not specified all messages will go to the table.
+    &lt;text_log&gt;
+        &lt;database&gt;system&lt;/database&gt;
+        &lt;table&gt;text_log&lt;/table&gt;
+        &lt;flush_interval_milliseconds&gt;7500&lt;/flush_interval_milliseconds&gt;
+        &lt;level&gt;&lt;/level&gt;
+    &lt;/text_log&gt;
+    --&gt;</span>
+
+    <span class="token comment">&lt;!-- Metric log contains rows with current values of ProfileEvents, CurrentMetrics collected with &quot;collect_interval_milliseconds&quot; interval. --&gt;</span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>metric_log</span><span class="token punctuation">&gt;</span></span>
+        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>database</span><span class="token punctuation">&gt;</span></span>system<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>database</span><span class="token punctuation">&gt;</span></span>
+        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>table</span><span class="token punctuation">&gt;</span></span>metric_log<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>table</span><span class="token punctuation">&gt;</span></span>
+        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>flush_interval_milliseconds</span><span class="token punctuation">&gt;</span></span>7500<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>flush_interval_milliseconds</span><span class="token punctuation">&gt;</span></span>
+        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>collect_interval_milliseconds</span><span class="token punctuation">&gt;</span></span>1000<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>collect_interval_milliseconds</span><span class="token punctuation">&gt;</span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>metric_log</span><span class="token punctuation">&gt;</span></span>
+
+    <span class="token comment">&lt;!--
+        Asynchronous metric log contains values of metrics from
+        system.asynchronous_metrics.
+    --&gt;</span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>asynchronous_metric_log</span><span class="token punctuation">&gt;</span></span>
+        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>database</span><span class="token punctuation">&gt;</span></span>system<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>database</span><span class="token punctuation">&gt;</span></span>
+        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>table</span><span class="token punctuation">&gt;</span></span>asynchronous_metric_log<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>table</span><span class="token punctuation">&gt;</span></span>
+        <span class="token comment">&lt;!--
+            Asynchronous metrics are updated once a minute, so there is
+            no need to flush more often.
+        --&gt;</span>
+        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>flush_interval_milliseconds</span><span class="token punctuation">&gt;</span></span>60000<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>flush_interval_milliseconds</span><span class="token punctuation">&gt;</span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>asynchronous_metric_log</span><span class="token punctuation">&gt;</span></span>
+
+    <span class="token comment">&lt;!--
+        OpenTelemetry log contains OpenTelemetry trace spans.
+    --&gt;</span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>opentelemetry_span_log</span><span class="token punctuation">&gt;</span></span>
+        <span class="token comment">&lt;!--
+            The default table creation code is insufficient, this &lt;engine&gt; spec
+            is a workaround. There is no 'event_time' for this log, but two times,
+            start and finish. It is sorted by finish time, to avoid inserting
+            data too far away in the past (probably we can sometimes insert a span
+            that is seconds earlier than the last span in the table, due to a race
+            between several spans inserted in parallel). This gives the spans a
+            global order that we can use to e.g. retry insertion into some external
+            system.
+        --&gt;</span>
+        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>engine</span><span class="token punctuation">&gt;</span></span>
+            engine MergeTree
+            partition by toYYYYMM(finish_date)
+            order by (finish_date, finish_time_us, trace_id)
+        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>engine</span><span class="token punctuation">&gt;</span></span>
+        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>database</span><span class="token punctuation">&gt;</span></span>system<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>database</span><span class="token punctuation">&gt;</span></span>
+        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>table</span><span class="token punctuation">&gt;</span></span>opentelemetry_span_log<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>table</span><span class="token punctuation">&gt;</span></span>
+        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>flush_interval_milliseconds</span><span class="token punctuation">&gt;</span></span>7500<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>flush_interval_milliseconds</span><span class="token punctuation">&gt;</span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>opentelemetry_span_log</span><span class="token punctuation">&gt;</span></span>
+
+
+    <span class="token comment">&lt;!-- Crash log. Stores stack traces for fatal errors.
+         This table is normally empty. --&gt;</span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>crash_log</span><span class="token punctuation">&gt;</span></span>
+        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>database</span><span class="token punctuation">&gt;</span></span>system<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>database</span><span class="token punctuation">&gt;</span></span>
+        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>table</span><span class="token punctuation">&gt;</span></span>crash_log<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>table</span><span class="token punctuation">&gt;</span></span>
+
+        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>partition_by</span> <span class="token punctuation">/&gt;</span></span>
+        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>flush_interval_milliseconds</span><span class="token punctuation">&gt;</span></span>1000<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>flush_interval_milliseconds</span><span class="token punctuation">&gt;</span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>crash_log</span><span class="token punctuation">&gt;</span></span>
+
+    <span class="token comment">&lt;!-- Parameters for embedded dictionaries, used in Yandex.Metrica.
+         See https://clickhouse.yandex/docs/en/dicts/internal_dicts/
+    --&gt;</span>
+
+    <span class="token comment">&lt;!-- Path to file with region hierarchy. --&gt;</span>
+    <span class="token comment">&lt;!-- &lt;path_to_regions_hierarchy_file&gt;/opt/geo/regions_hierarchy.txt&lt;/path_to_regions_hierarchy_file&gt; --&gt;</span>
+
+    <span class="token comment">&lt;!-- Path to directory with files containing names of regions --&gt;</span>
+    <span class="token comment">&lt;!-- &lt;path_to_regions_names_files&gt;/opt/geo/&lt;/path_to_regions_names_files&gt; --&gt;</span>
+
+
+    <span class="token comment">&lt;!-- &lt;top_level_domains_path&gt;/var/lib/clickhouse/top_level_domains/&lt;/top_level_domains_path&gt; --&gt;</span>
+    <span class="token comment">&lt;!-- Custom TLD lists.
+         Format: &lt;name&gt;/path/to/file&lt;/name&gt;
+
+         Changes will not be applied w/o server restart.
+         Path to the list is under top_level_domains_path (see above).
+    --&gt;</span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>top_level_domains_lists</span><span class="token punctuation">&gt;</span></span>
+        <span class="token comment">&lt;!--
+        &lt;public_suffix_list&gt;/path/to/public_suffix_list.dat&lt;/public_suffix_list&gt;
+        --&gt;</span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>top_level_domains_lists</span><span class="token punctuation">&gt;</span></span>
+
+    <span class="token comment">&lt;!-- Configuration of external dictionaries. See:
+         https://clickhouse.tech/docs/en/sql-reference/dictionaries/external-dictionaries/external-dicts
+    --&gt;</span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>dictionaries_config</span><span class="token punctuation">&gt;</span></span>*_dictionary.xml<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>dictionaries_config</span><span class="token punctuation">&gt;</span></span>
+
+    <span class="token comment">&lt;!-- Uncomment if you want data to be compressed 30-100% better.
+         Don't do that if you just started using ClickHouse.
+      --&gt;</span>
+    <span class="token comment">&lt;!--
+    &lt;compression&gt;
+        &lt;!- - Set of variants. Checked in order. Last matching case wins. If nothing matches, lz4 will be used. - -&gt;
+        &lt;case&gt;
+
+            &lt;!- - Conditions. All must be satisfied. Some conditions may be omitted. - -&gt;
+            &lt;min_part_size&gt;10000000000&lt;/min_part_size&gt;        &lt;!- - Min part size in bytes. - -&gt;
+            &lt;min_part_size_ratio&gt;0.01&lt;/min_part_size_ratio&gt;   &lt;!- - Min size of part relative to whole table size. - -&gt;
+
+            &lt;!- - What compression method to use. - -&gt;
+            &lt;method&gt;zstd&lt;/method&gt;
+        &lt;/case&gt;
+    &lt;/compression&gt;
+    --&gt;</span>
+
+    <span class="token comment">&lt;!-- Allow to execute distributed DDL queries (CREATE, DROP, ALTER, RENAME) on cluster.
+         Works only if ZooKeeper is enabled. Comment it if such functionality isn't required. --&gt;</span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>distributed_ddl</span><span class="token punctuation">&gt;</span></span>
+        <span class="token comment">&lt;!-- Path in ZooKeeper to queue with DDL queries --&gt;</span>
+        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>path</span><span class="token punctuation">&gt;</span></span>/clickhouse/task_queue/ddl<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>path</span><span class="token punctuation">&gt;</span></span>
+
+        <span class="token comment">&lt;!-- Settings from this profile will be used to execute DDL queries --&gt;</span>
+        <span class="token comment">&lt;!-- &lt;profile&gt;default&lt;/profile&gt; --&gt;</span>
+
+        <span class="token comment">&lt;!-- Controls how much ON CLUSTER queries can be run simultaneously. --&gt;</span>
+        <span class="token comment">&lt;!-- &lt;pool_size&gt;1&lt;/pool_size&gt; --&gt;</span>
+
+        <span class="token comment">&lt;!--
+             Cleanup settings (active tasks will not be removed)
+        --&gt;</span>
+
+        <span class="token comment">&lt;!-- Controls task TTL (default 1 week) --&gt;</span>
+        <span class="token comment">&lt;!-- &lt;task_max_lifetime&gt;604800&lt;/task_max_lifetime&gt; --&gt;</span>
+
+        <span class="token comment">&lt;!-- Controls how often cleanup should be performed (in seconds) --&gt;</span>
+        <span class="token comment">&lt;!-- &lt;cleanup_delay_period&gt;60&lt;/cleanup_delay_period&gt; --&gt;</span>
+
+        <span class="token comment">&lt;!-- Controls how many tasks could be in the queue --&gt;</span>
+        <span class="token comment">&lt;!-- &lt;max_tasks_in_queue&gt;1000&lt;/max_tasks_in_queue&gt; --&gt;</span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>distributed_ddl</span><span class="token punctuation">&gt;</span></span>
+
+    <span class="token comment">&lt;!-- Settings to fine tune MergeTree tables. See documentation in source code, in MergeTreeSettings.h --&gt;</span>
+    <span class="token comment">&lt;!--
+    &lt;merge_tree&gt;
+        &lt;max_suspicious_broken_parts&gt;5&lt;/max_suspicious_broken_parts&gt;
+    &lt;/merge_tree&gt;
+    --&gt;</span>
+
+    <span class="token comment">&lt;!-- Protection from accidental DROP.
+         If size of a MergeTree table is greater than max_table_size_to_drop (in bytes) than table could not be dropped with any DROP query.
+         If you want do delete one table and don't want to change clickhouse-server config, you could create special file &lt;clickhouse-path&gt;/flags/force_drop_table and make DROP once.
+         By default max_table_size_to_drop is 50GB; max_table_size_to_drop=0 allows to DROP any tables.
+         The same for max_partition_size_to_drop.
+         Uncomment to disable protection.
+    --&gt;</span>
+    <span class="token comment">&lt;!-- &lt;max_table_size_to_drop&gt;0&lt;/max_table_size_to_drop&gt; --&gt;</span>
+    <span class="token comment">&lt;!-- &lt;max_partition_size_to_drop&gt;0&lt;/max_partition_size_to_drop&gt; --&gt;</span>
+
+    <span class="token comment">&lt;!-- Example of parameters for GraphiteMergeTree table engine --&gt;</span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>graphite_rollup_example</span><span class="token punctuation">&gt;</span></span>
+        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>pattern</span><span class="token punctuation">&gt;</span></span>
+            <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>regexp</span><span class="token punctuation">&gt;</span></span>click_cost<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>regexp</span><span class="token punctuation">&gt;</span></span>
+            <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>function</span><span class="token punctuation">&gt;</span></span>any<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>function</span><span class="token punctuation">&gt;</span></span>
+            <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>retention</span><span class="token punctuation">&gt;</span></span>
+                <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>age</span><span class="token punctuation">&gt;</span></span>0<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>age</span><span class="token punctuation">&gt;</span></span>
+                <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>precision</span><span class="token punctuation">&gt;</span></span>3600<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>precision</span><span class="token punctuation">&gt;</span></span>
+            <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>retention</span><span class="token punctuation">&gt;</span></span>
+            <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>retention</span><span class="token punctuation">&gt;</span></span>
+                <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>age</span><span class="token punctuation">&gt;</span></span>86400<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>age</span><span class="token punctuation">&gt;</span></span>
+                <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>precision</span><span class="token punctuation">&gt;</span></span>60<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>precision</span><span class="token punctuation">&gt;</span></span>
+            <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>retention</span><span class="token punctuation">&gt;</span></span>
+        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>pattern</span><span class="token punctuation">&gt;</span></span>
+        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>default</span><span class="token punctuation">&gt;</span></span>
+            <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>function</span><span class="token punctuation">&gt;</span></span>max<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>function</span><span class="token punctuation">&gt;</span></span>
+            <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>retention</span><span class="token punctuation">&gt;</span></span>
+                <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>age</span><span class="token punctuation">&gt;</span></span>0<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>age</span><span class="token punctuation">&gt;</span></span>
+                <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>precision</span><span class="token punctuation">&gt;</span></span>60<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>precision</span><span class="token punctuation">&gt;</span></span>
+            <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>retention</span><span class="token punctuation">&gt;</span></span>
+            <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>retention</span><span class="token punctuation">&gt;</span></span>
+                <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>age</span><span class="token punctuation">&gt;</span></span>3600<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>age</span><span class="token punctuation">&gt;</span></span>
+                <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>precision</span><span class="token punctuation">&gt;</span></span>300<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>precision</span><span class="token punctuation">&gt;</span></span>
+            <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>retention</span><span class="token punctuation">&gt;</span></span>
+            <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>retention</span><span class="token punctuation">&gt;</span></span>
+                <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>age</span><span class="token punctuation">&gt;</span></span>86400<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>age</span><span class="token punctuation">&gt;</span></span>
+                <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>precision</span><span class="token punctuation">&gt;</span></span>3600<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>precision</span><span class="token punctuation">&gt;</span></span>
+            <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>retention</span><span class="token punctuation">&gt;</span></span>
+        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>default</span><span class="token punctuation">&gt;</span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>graphite_rollup_example</span><span class="token punctuation">&gt;</span></span>
+
+    <span class="token comment">&lt;!-- Directory in &lt;clickhouse-path&gt; containing schema files for various input formats.
+         The directory will be created if it doesn't exist.
+      --&gt;</span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>format_schema_path</span><span class="token punctuation">&gt;</span></span>/var/lib/clickhouse/format_schemas/<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>format_schema_path</span><span class="token punctuation">&gt;</span></span>
+
+    <span class="token comment">&lt;!-- Default query masking rules, matching lines would be replaced with something else in the logs
+        (both text logs and system.query_log).
+        name - name for the rule (optional)
+        regexp - RE2 compatible regular expression (mandatory)
+        replace - substitution string for sensitive data (optional, by default - six asterisks)
+    --&gt;</span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>query_masking_rules</span><span class="token punctuation">&gt;</span></span>
+        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>rule</span><span class="token punctuation">&gt;</span></span>
+            <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>name</span><span class="token punctuation">&gt;</span></span>hide encrypt/decrypt arguments<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>name</span><span class="token punctuation">&gt;</span></span>
+            <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>regexp</span><span class="token punctuation">&gt;</span></span>((?:aes_)?(?:encrypt|decrypt)(?:_mysql)?)\s*\(\s*(?:'(?:\\'|.)+'|.*?)\s*\)<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>regexp</span><span class="token punctuation">&gt;</span></span>
+            <span class="token comment">&lt;!-- or more secure, but also more invasive:
+                (aes_\w+)\s*\(.*\)
+            --&gt;</span>
+            <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>replace</span><span class="token punctuation">&gt;</span></span>\1(???)<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>replace</span><span class="token punctuation">&gt;</span></span>
+        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>rule</span><span class="token punctuation">&gt;</span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>query_masking_rules</span><span class="token punctuation">&gt;</span></span>
+
+    <span class="token comment">&lt;!-- Uncomment to use custom http handlers.
+        rules are checked from top to bottom, first match runs the handler
+            url - to match request URL, you can use 'regex:' prefix to use regex match(optional)
+            methods - to match request method, you can use commas to separate multiple method matches(optional)
+            headers - to match request headers, match each child element(child element name is header name), you can use 'regex:' prefix to use regex match(optional)
+        handler is request handler
+            type - supported types: static, dynamic_query_handler, predefined_query_handler
+            query - use with predefined_query_handler type, executes query when the handler is called
+            query_param_name - use with dynamic_query_handler type, extracts and executes the value corresponding to the &lt;query_param_name&gt; value in HTTP request params
+            status - use with static type, response status code
+            content_type - use with static type, response content-type
+            response_content - use with static type, Response content sent to client, when using the prefix 'file://' or 'config://', find the content from the file or configuration send to client.
+
+    &lt;http_handlers&gt;
+        &lt;rule&gt;
+            &lt;url&gt;/&lt;/url&gt;
+            &lt;methods&gt;POST,GET&lt;/methods&gt;
+            &lt;headers&gt;&lt;pragma&gt;no-cache&lt;/pragma&gt;&lt;/headers&gt;
+            &lt;handler&gt;
+                &lt;type&gt;dynamic_query_handler&lt;/type&gt;
+                &lt;query_param_name&gt;query&lt;/query_param_name&gt;
+            &lt;/handler&gt;
+        &lt;/rule&gt;
+
+        &lt;rule&gt;
+            &lt;url&gt;/predefined_query&lt;/url&gt;
+            &lt;methods&gt;POST,GET&lt;/methods&gt;
+            &lt;handler&gt;
+                &lt;type&gt;predefined_query_handler&lt;/type&gt;
+                &lt;query&gt;SELECT * FROM system.settings&lt;/query&gt;
+            &lt;/handler&gt;
+        &lt;/rule&gt;
+
+        &lt;rule&gt;
+            &lt;handler&gt;
+                &lt;type&gt;static&lt;/type&gt;
+                &lt;status&gt;200&lt;/status&gt;
+                &lt;content_type&gt;text/plain; charset=UTF-8&lt;/content_type&gt;
+                &lt;response_content&gt;config://http_server_default_response&lt;/response_content&gt;
+            &lt;/handler&gt;
+        &lt;/rule&gt;
+    &lt;/http_handlers&gt;
+    --&gt;</span>
+
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>send_crash_reports</span><span class="token punctuation">&gt;</span></span>
+        <span class="token comment">&lt;!-- Changing &lt;enabled&gt; to true allows sending crash reports to --&gt;</span>
+        <span class="token comment">&lt;!-- the ClickHouse core developers team via Sentry https://sentry.io --&gt;</span>
+        <span class="token comment">&lt;!-- Doing so at least in pre-production environments is highly appreciated --&gt;</span>
+        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>enabled</span><span class="token punctuation">&gt;</span></span>false<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>enabled</span><span class="token punctuation">&gt;</span></span>
+        <span class="token comment">&lt;!-- Change &lt;anonymize&gt; to true if you don't feel comfortable attaching the server hostname to the crash report --&gt;</span>
+        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>anonymize</span><span class="token punctuation">&gt;</span></span>false<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>anonymize</span><span class="token punctuation">&gt;</span></span>
+        <span class="token comment">&lt;!-- Default endpoint should be changed to different Sentry DSN only if you have --&gt;</span>
+        <span class="token comment">&lt;!-- some in-house engineers or hired consultants who're going to debug ClickHouse issues for you --&gt;</span>
+        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>endpoint</span><span class="token punctuation">&gt;</span></span>https://6f33034cfe684dd7a3ab9875e57b1c8d@o388870.ingest.sentry.io/5226277<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>endpoint</span><span class="token punctuation">&gt;</span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>send_crash_reports</span><span class="token punctuation">&gt;</span></span>
+
+    <span class="token comment">&lt;!-- Uncomment to disable ClickHouse internal DNS caching. --&gt;</span>
+    <span class="token comment">&lt;!-- &lt;disable_internal_dns_cache&gt;1&lt;/disable_internal_dns_cache&gt; --&gt;</span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>yandex</span><span class="token punctuation">&gt;</span></span>
+</code></pre></div><h2 id="users-xml"><a href="#users-xml" class="header-anchor">#</a> users.xml</h2> <div class="language-xml extra-class"><pre class="language-xml"><code><span class="token prolog">&lt;?xml version=&quot;1.0&quot;?&gt;</span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>yandex</span><span class="token punctuation">&gt;</span></span>
+    <span class="token comment">&lt;!-- Profiles of settings. --&gt;</span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>profiles</span><span class="token punctuation">&gt;</span></span>
+        <span class="token comment">&lt;!-- Default settings. --&gt;</span>
+        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>default</span><span class="token punctuation">&gt;</span></span>
+            <span class="token comment">&lt;!-- Maximum memory usage for processing single query, in bytes. --&gt;</span>
+            <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>max_memory_usage</span><span class="token punctuation">&gt;</span></span>10000000000<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>max_memory_usage</span><span class="token punctuation">&gt;</span></span>
+
+            <span class="token comment">&lt;!-- How to choose between replicas during distributed query processing.
+                 random - choose random replica from set of replicas with minimum number of errors
+                 nearest_hostname - from set of replicas with minimum number of errors, choose replica
+                  with minimum number of different symbols between replica's hostname and local hostname
+                  (Hamming distance).
+                 in_order - first live replica is chosen in specified order.
+                 first_or_random - if first replica one has higher number of errors, pick a random one from replicas with minimum number of errors.
+            --&gt;</span>
+            <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>load_balancing</span><span class="token punctuation">&gt;</span></span>random<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>load_balancing</span><span class="token punctuation">&gt;</span></span>
+            <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>max_query_size</span><span class="token punctuation">&gt;</span></span>1073741824<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>max_query_size</span><span class="token punctuation">&gt;</span></span>
+            <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>max_ast_elements</span><span class="token punctuation">&gt;</span></span>10000000<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>max_ast_elements</span><span class="token punctuation">&gt;</span></span>
+            <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>max_expanded_ast_elements</span><span class="token punctuation">&gt;</span></span>10000000<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>max_expanded_ast_elements</span><span class="token punctuation">&gt;</span></span>
+        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>default</span><span class="token punctuation">&gt;</span></span>
+
+        <span class="token comment">&lt;!-- Profile that allows only read queries. --&gt;</span>
+        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>readonly</span><span class="token punctuation">&gt;</span></span>
+            <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>readonly</span><span class="token punctuation">&gt;</span></span>1<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>readonly</span><span class="token punctuation">&gt;</span></span>
+        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>readonly</span><span class="token punctuation">&gt;</span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>profiles</span><span class="token punctuation">&gt;</span></span>
+
+    <span class="token comment">&lt;!-- Users and ACL. --&gt;</span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>users</span><span class="token punctuation">&gt;</span></span>
+        <span class="token comment">&lt;!-- If user name was not specified, 'default' user is used. --&gt;</span>
+        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>default</span><span class="token punctuation">&gt;</span></span>
+            <span class="token comment">&lt;!-- Password could be specified in plaintext or in SHA256 (in hex format).
+
+                 If you want to specify password in plaintext (not recommended), place it in 'password' element.
+                 Example: &lt;password&gt;qwerty&lt;/password&gt;.
+                 Password could be empty.
+
+                 If you want to specify SHA256, place it in 'password_sha256_hex' element.
+                 Example: &lt;password_sha256_hex&gt;65e84be33532fb784c48129675f9eff3a682b27168c0ea744b2cf58ee02337c5&lt;/password_sha256_hex&gt;
+                 Restrictions of SHA256: impossibility to connect to ClickHouse using MySQL JS client (as of July 2019).
+
+                 If you want to specify double SHA1, place it in 'password_double_sha1_hex' element.
+                 Example: &lt;password_double_sha1_hex&gt;e395796d6546b1b65db9d665cd43f0e858dd4303&lt;/password_double_sha1_hex&gt;
+
+                 If you want to specify a previously defined LDAP server (see 'ldap_servers' in the main config) for authentication,
+                  place its name in 'server' element inside 'ldap' element.
+                 Example: &lt;ldap&gt;&lt;server&gt;my_ldap_server&lt;/server&gt;&lt;/ldap&gt;
+
+                 If you want to authenticate the user via Kerberos (assuming Kerberos is enabled, see 'kerberos' in the main config),
+                  place 'kerberos' element instead of 'password' (and similar) elements.
+                 The name part of the canonical principal name of the initiator must match the user name for authentication to succeed.
+                 You can also place 'realm' element inside 'kerberos' element to further restrict authentication to only those requests
+                  whose initiator's realm matches it. 
+                 Example: &lt;kerberos /&gt;
+                 Example: &lt;kerberos&gt;&lt;realm&gt;EXAMPLE.COM&lt;/realm&gt;&lt;/kerberos&gt;
+
+                 How to generate decent password:
+                 Execute: PASSWORD=$(base64 &lt; /dev/urandom | head -c8); echo &quot;$PASSWORD&quot;; echo -n &quot;$PASSWORD&quot; | sha256sum | tr -d '-'
+                 In first line will be password and in second - corresponding SHA256.
+
+                 How to generate double SHA1:
+                 Execute: PASSWORD=$(base64 &lt; /dev/urandom | head -c8); echo &quot;$PASSWORD&quot;; echo -n &quot;$PASSWORD&quot; | sha1sum | tr -d '-' | xxd -r -p | sha1sum | tr -d '-'
+                 In first line will be password and in second - corresponding double SHA1.
+            --&gt;</span>
+            <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>password</span><span class="token punctuation">&gt;</span></span>Clickhouse123$<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>password</span><span class="token punctuation">&gt;</span></span>
+
+            <span class="token comment">&lt;!-- List of networks with open access.
+
+                 To open access from everywhere, specify:
+                    &lt;ip&gt;::/0&lt;/ip&gt;
+
+                 To open access only from localhost, specify:
+                    &lt;ip&gt;::1&lt;/ip&gt;
+                    &lt;ip&gt;127.0.0.1&lt;/ip&gt;
+
+                 Each element of list has one of the following forms:
+                 &lt;ip&gt; IP-address or network mask. Examples: 213.180.204.3 or 10.0.0.1/8 or 10.0.0.1/255.255.255.0
+                     2a02:6b8::3 or 2a02:6b8::3/64 or 2a02:6b8::3/ffff:ffff:ffff:ffff::.
+                 &lt;host&gt; Hostname. Example: server01.yandex.ru.
+                     To check access, DNS query is performed, and all received addresses compared to peer address.
+                 &lt;host_regexp&gt; Regular expression for host names. Example, ^server\d\d-\d\d-\d\.yandex\.ru$
+                     To check access, DNS PTR query is performed for peer address and then regexp is applied.
+                     Then, for result of PTR query, another DNS query is performed and all received addresses compared to peer address.
+                     Strongly recommended that regexp is ends with $
+                 All results of DNS requests are cached till server restart.
+            --&gt;</span>
+            <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>networks</span><span class="token punctuation">&gt;</span></span>
+                <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>ip</span><span class="token punctuation">&gt;</span></span>::/0<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>ip</span><span class="token punctuation">&gt;</span></span>
+            <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>networks</span><span class="token punctuation">&gt;</span></span>
+
+            <span class="token comment">&lt;!-- Settings profile for user. --&gt;</span>
+            <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>profile</span><span class="token punctuation">&gt;</span></span>default<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>profile</span><span class="token punctuation">&gt;</span></span>
+
+            <span class="token comment">&lt;!-- Quota for user. --&gt;</span>
+            <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>quota</span><span class="token punctuation">&gt;</span></span>default<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>quota</span><span class="token punctuation">&gt;</span></span>
+
+            <span class="token comment">&lt;!-- User can create other users and grant rights to them. --&gt;</span>
+            <span class="token comment">&lt;!-- &lt;access_management&gt;1&lt;/access_management&gt; --&gt;</span>
+        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>default</span><span class="token punctuation">&gt;</span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>users</span><span class="token punctuation">&gt;</span></span>
+
+    <span class="token comment">&lt;!-- Quotas. --&gt;</span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>quotas</span><span class="token punctuation">&gt;</span></span>
+        <span class="token comment">&lt;!-- Name of quota. --&gt;</span>
+        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>default</span><span class="token punctuation">&gt;</span></span>
+            <span class="token comment">&lt;!-- Limits for time interval. You could specify many intervals with different limits. --&gt;</span>
+            <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>interval</span><span class="token punctuation">&gt;</span></span>
+                <span class="token comment">&lt;!-- Length of interval. --&gt;</span>
+                <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>duration</span><span class="token punctuation">&gt;</span></span>3600<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>duration</span><span class="token punctuation">&gt;</span></span>
+
+                <span class="token comment">&lt;!-- No limits. Just calculate resource usage for time interval. --&gt;</span>
+                <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>queries</span><span class="token punctuation">&gt;</span></span>0<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>queries</span><span class="token punctuation">&gt;</span></span>
+                <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>errors</span><span class="token punctuation">&gt;</span></span>0<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>errors</span><span class="token punctuation">&gt;</span></span>
+                <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>result_rows</span><span class="token punctuation">&gt;</span></span>0<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>result_rows</span><span class="token punctuation">&gt;</span></span>
+                <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>read_rows</span><span class="token punctuation">&gt;</span></span>0<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>read_rows</span><span class="token punctuation">&gt;</span></span>
+                <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>execution_time</span><span class="token punctuation">&gt;</span></span>0<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>execution_time</span><span class="token punctuation">&gt;</span></span>
+            <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>interval</span><span class="token punctuation">&gt;</span></span>
+        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>default</span><span class="token punctuation">&gt;</span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>quotas</span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>yandex</span><span class="token punctuation">&gt;</span></span>
+
+</code></pre></div><h2 id="deploy-sh"><a href="#deploy-sh" class="header-anchor">#</a> deploy.sh</h2> <div class="language-sh extra-class"><pre class="language-sh"><code><span class="token comment">#!\bin\bash</span>
+
+<span class="token function">mkdir</span> <span class="token parameter variable">-p</span> /etc/clickhouse
+<span class="token punctuation">\</span>cp ./config.xml /etc/clickhouse/config.xml <span class="token parameter variable">-f</span>
+<span class="token punctuation">\</span>cp ./users.xml /etc/clickhouse/users.xml <span class="token parameter variable">-f</span>
+<span class="token function">docker-compose</span> up <span class="token parameter variable">-d</span>
+</code></pre></div></div></div>  <div class="page-edit"><!----> <!----> <div class="last-updated"><span class="prefix">上次更新:</span> <span class="time">2023/09/05, 21:16:45</span></div></div> <div class="page-nav-wapper"><div class="page-nav-centre-wrap"><a href="/pages/7e58c5/" class="page-nav-centre page-nav-centre-prev"><div class="tooltip">Cerebro</div></a> <a href="/pages/3d230b/" class="page-nav-centre page-nav-centre-next"><div class="tooltip">Consul</div></a></div> <div class="page-nav"><p class="inner"><span class="prev">
+        ←
+        <a href="/pages/7e58c5/" class="prev">Cerebro</a></span> <span class="next"><a href="/pages/3d230b/">Consul</a>→
+      </span></p></div></div></div> <!----></main></div> <div class="footer"><div class="icons"><a href="mailto:1248824030@qq.com" title="发邮件" target="_blank" class="iconfont icon-youjian"></a><a href="https://github.com/Gresdy" title="GitHub" target="_blank" class="iconfont icon-github"></a><a href="https://github.com/Gresdy" title="Gitee" target="_blank" class="iconfont icon-gitee"></a></div> 
+  Theme by
+  <a href="https://github.com/xugaoyi/vuepress-theme-vdoing" target="_blank" title="本站主题">Vdoing</a> 
+    | Copyright © 2023-2024
+    <span>三更扯谈 | MIT License</span></div> <div class="buttons"><div title="返回顶部" class="button blur go-to-top iconfont icon-fanhuidingbu" style="display:none;"></div> <div title="去评论" class="button blur go-to-comment iconfont icon-pinglun" style="display:none;"></div> <div title="主题模式" class="button blur theme-mode-but iconfont icon-zhuti"><ul class="select-box" style="display:none;"><li class="iconfont icon-zidong">
+          跟随系统
+        </li><li class="iconfont icon-rijianmoshi">
+          浅色模式
+        </li><li class="iconfont icon-yejianmoshi">
+          深色模式
+        </li><li class="iconfont icon-yuedu">
+          阅读模式
+        </li></ul></div></div> <!----> <!----> <!----></div><div class="global-ui"></div></div>
+    <script src="/assets/js/app.5c33f930.js" defer></script><script src="/assets/js/3.90e7f4f9.js" defer></script><script src="/assets/js/48.b7baffbf.js" defer></script>
+  </body>
+</html>
